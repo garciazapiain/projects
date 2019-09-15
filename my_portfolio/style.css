@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+  }
+
+header{
+    background-color:darkblue;
+    display: flexbox;
+}
+
+nav {
+    text-align: center;
+    background-color: darkblue;
+    padding: 1.5rem;
+    width: 10rem;
+    display: flexbox;
+    margin: 3rem;
+    border: 3rem;
+    width: 1300px;
+  }
+  
+nav a {
+    display: inline;
+    padding: 1.5rem;
+    color: black;
+    line-height: 3rem;
+    text-decoration: none;
+    background-color: lightblue;
+    display: flexbox;
+    justify-content: space-between;
+  }
+  
+  nav a:hover {
+    color: white;
+  }
+
+.banner{
+    background: #223c88 url('img/mountains.png') center/cover no-repeat;
+    height: 25rem;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.intro{
+    display: flex;
+    align-items:center;
+    text-align: center;
+    justify-content:center;
+    overflow: hidden;
+    transform: translateY(-1%);
+}
+
+.intro h1{
+    font-size:2rem;
+}
+
+/* Animation */
+.anim-typewriter{
+    animation: typewriter 2s steps(44) .5s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }  
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: lightblue;
+  }
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    font-weight: 900;
+}
+
+.skills{
+    background-color: lightgray;
+    display: block;
+    padding: 3rem;
+}
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+  }
+@keyframes load{
+    from {
+      width: 0%
+    }
+  }
+@-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+@-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+@-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+.bar{
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+.bar::before{
+    content:  attr(skill);
+    background-color: darkblue;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+.bar.front::before{
+    background-color: #ffcc33;
+  }
+.bar.back::before{
+    background-color: #a6cfe3;
+  }
+.bar.bar.novice::before::before{
+    width: calc(40% - 10px);
+  }
+.bar.intermediate::before{
+    width: calc(60% - 10px);
+  }
+.bar.proficient::before{
+    width: calc(80% - 10px);
+  }
+.bar.expert::before{
+    width: calc(100% - 10px);
+  }
+  
+  .my_portfolio{
+      
+  }
