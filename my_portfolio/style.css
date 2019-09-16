@@ -87,7 +87,7 @@ h2{
 .skills{
     background-color: lightgray;
     display: block;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .container{
@@ -118,9 +118,9 @@ h2{
 .bar{
     background-color: #EEE;
     padding: 2px;
-    border-radius: 15px;
+    border-radius: 25px;
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 24px;
     color: #FFF;
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
@@ -145,6 +145,7 @@ h2{
   }
 .bar.bar.novice::before::before{
     width: calc(40% - 10px);
+    padding: 3rem;
   }
 .bar.intermediate::before{
     width: calc(60% - 10px);
@@ -156,6 +157,111 @@ h2{
     width: calc(100% - 10px);
   }
   
-  .my_portfolio{
-      
+.my_portfolio{
+      display: flex;
+      justify-content:flex-start;
+      align-items: stretch;
+      width: 100%;
   }
+
+.project{
+    width: 100%;
+    justify-content:flex-start;
+    align-items: flex-start;
+    float: left;
+}
+
+.project img{
+    width: 150px;
+}
+
+.line{
+    width: 100rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:space-around;
+    padding: 2rem;
+}
+
+.line2{
+    width: 100rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:space-around;
+    padding: 2rem;
+}
+
+.about_me{
+    background-color: white;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:space-around;
+    padding: 2rem;
+}
+
+.find_me{
+    background-color: black;
+    padding: 6rem;
+    color:white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.find_me_pics{
+    padding: 3rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:space-around;
+}
+
+
+.find_me h1{
+    color:white;
+}
+
+.linkedin{
+    padding: 2rem;
+}
+
+.git{
+    padding: 2rem;
+}
+
+.contact{
+    margin-bottom: 3rem;3
+}
+
+.contact_form{
+    padding: 2.5rem;
+    background-color: grey;
+    display: flex;
+}
+
+.contact_form1{
+    width: 50rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:space-between;
+    padding: 2rem;
+}
+
+.contact_form2{
+    width: 100rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:space-around;
+    padding: 2rem;
+}
+
+.contact_message{
+    background-color: gray;
+    padding: 5rem;
+    height: 3rem;
+}
+
+footer{
+    background-color: white;
+    display: block;
+    padding: 2rem;
+    text-align: center;
+}
