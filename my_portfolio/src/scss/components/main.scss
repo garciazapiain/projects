@@ -42,7 +42,7 @@ section.skills{
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    flex-wrap: nowrap;
+    margin: 0;
 }
 
 .skills_bar{
@@ -169,7 +169,13 @@ section.about_me{
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    @media screen and (max-width: 1050px) {
+      width: 100%;
+    }
 }
+
 
 .about{
     flex-direction: row;
@@ -177,15 +183,39 @@ section.about_me{
     justify-content: space-evenly;
     width:80%;
     padding: 2rem;
+    @media screen and (min-width: 1050px) {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      padding: 0;
+      flex-wrap: wrap;
+    }
   
 }
 
+.about img{
+  @media screen and (max-width: 1050px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+}
+
 .about p{
-    width: 30%;
-    margin: .5em;
+    width: 50%;
+    margin: 2em;
     align-items: center;
     justify-content: center;
-    text-align: left;
+    text-align: left; 
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:1050px) {
+      margin-top: 10rem;
+      width: 100%;
+      margin:0 auto;
+    }
 }
 
 /* SECTION CONTACT */
@@ -205,16 +235,19 @@ section.contact h1{
 }
 
 .contact_form{
-    width:50%;
+    width:70%;
     justify-content: center;
     align-items: center;
     background: gray;
     padding-bottom: 5rem;
     margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .contact_form h3{
-    text-align: left;
+    text-align: center;
     padding: 1rem;
 }
 
@@ -227,5 +260,38 @@ section.contact h1{
     flex-direction: row;
     display: flex;
 }
+
+/* FIND ME */
+
+section.find_me{
+  background-color: black;
+  padding: 6rem;
+  color:white;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.find_me_pics{
+  padding: 3rem;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content:space-evenly;
+  width: 80%;
+}
+
+.find_me h1{
+  color:white;
+}
+
+.find_me_pics img{
+  @media screen and (max-width: 740px) {
+    margin-bottom: 4rem;
+    display: flex;
+  }
+}
+
 
 
