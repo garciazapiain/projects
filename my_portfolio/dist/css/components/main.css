@@ -1,16 +1,17 @@
 /* SECTION BANNER */
 .banner {
-  background: url("../img/mountains.png") center/cover no-repeat;
-  height: 25rem;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: center; }
+  height: 50rem;
+  padding: 2rem;
+  background: url("../img/mountains.png") center/cover no-repeat; }
 
 .intro {
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
+  text-align: center;
   overflow: hidden;
   transform: translateY(-1%); }
 
@@ -19,13 +20,13 @@
 
 /* Animation for "I'm Juan Garcia..." */
 .anim-typewriter {
-  animation: typewriter 2s steps(44) 0.5s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal; }
+  animation: typewriter 3s steps(44) 0.5s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal; }
 
 @keyframes typewriter {
   from {
     width: 0; }
   to {
-    width: 24em; } }
+    width: 30em; } }
 
 @keyframes blinkTextCursor {
   from {
@@ -35,21 +36,22 @@
 
 /* SECTION SKILLS */
 section.skills {
-  background-color: lightgray;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  margin: 0; }
+  margin: 0;
+  padding: 3rem;
+  background-color: lightgray; }
 
 .skills_bar {
-  width: 75%;
   justify-content: center;
+  width: 75%;
   padding: 2rem; }
 
 .container h1 {
-  padding-top: 1rem;
-  align-items: flex-start; }
+  align-items: flex-start;
+  padding-top: 1rem; }
 
 /* Animation for "Skills bar..." */
 @keyframes load {
@@ -69,10 +71,10 @@ section.skills {
     width: 0%; } }
 
 .bar {
-  background-color: #EEE;
   padding: 2px;
   border-radius: 25px;
   margin-bottom: 5px;
+  background-color: #EEE;
   font-size: 24px;
   color: #FFF;
   font-weight: bold;
@@ -112,78 +114,118 @@ section.skills {
 section.my_portfolio {
   justify-content: center;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  padding: 2rem; }
 
 .my_portfolio h1 {
   text-align: center; }
 
 .project {
-  width: 100%;
   justify-content: center;
   align-items: center;
   float: left;
-  text-align: center;
+  width: 100%;
   margin: 0;
-  padding-left: 0; }
+  padding-left: 0;
+  text-align: center; }
 
 .project img {
-  width: 150px; }
+  width: 15em; }
 
 .line1 {
   display: flex;
   justify-content: space-around;
-  margin: 0;
+  margin-top: 2em;
   padding-bottom: 2rem; }
+  @media screen and (max-width: 576px) {
+    .line1 {
+      flex-direction: column;
+      margin-top: 0;
+      padding-top: 0; } }
 
 .line2 {
   display: flex;
   justify-content: space-around;
   margin: 0;
   padding-bottom: 2rem; }
+  @media screen and (max-width: 576px) {
+    .line2 {
+      flex-direction: column;
+      margin-top: 0;
+      padding-top: 0; } }
+
+@media screen and (max-width: 576px) {
+  .projecta {
+    padding: 1em; } }
+
+@media screen and (max-width: 576px) {
+  .projectb {
+    padding: 1em; } }
+
+@media screen and (max-width: 576px) {
+  .projectc {
+    padding-top: 1em; } }
+
+@media screen and (max-width: 576px) {
+  .projectd {
+    padding: 1em; } }
+
+@media screen and (max-width: 576px) {
+  .projecte {
+    padding: 1em; } }
+
+@media screen and (max-width: 576px) {
+  .projectf {
+    padding: 1em; } }
 
 /* SECTION ABOUT ME */
 section.about_me {
-  background-color: white;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
+  padding: 2rem;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: white; }
   @media screen and (max-width: 1050px) {
     section.about_me {
       width: 100%; } }
 
 .about {
-  flex-direction: row;
   display: flex;
   justify-content: space-evenly;
   width: 80%;
   padding: 2rem; }
-  @media screen and (min-width: 1050px) {
+  @media screen and (max-width: 1051px) {
     .about {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
       width: 50%;
-      padding: 0;
-      flex-wrap: wrap; } }
+      padding: 0; } }
 
-@media screen and (max-width: 1050px) {
-  .about img {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0; } }
+.about img {
+  flex-wrap: nowrap;
+  border-radius: 100%; }
+  @media screen and (max-width: 1050px) {
+    .about img {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 2rem; } }
 
 .about p {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   width: 50%;
   margin: 2em;
-  align-items: center;
-  justify-content: center;
   text-align: left;
-  display: flex;
-  justify-content: space-between; }
+  letter-spacing: 2px; }
   @media (max-width: 1050px) {
     .about p {
       margin-top: 10rem;
@@ -192,56 +234,54 @@ section.about_me {
 
 /* SECTION CONTACT */
 section.contact {
-  background-color: lightblue;
+  display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  display: flex; }
+  padding: 2rem;
+  background-color: lightblue; }
 
 section.contact h1 {
   padding-top: 1rem;
   color: black;
   text-align: center; }
 
-.contact_form {
-  width: 70%;
-  justify-content: center;
-  align-items: center;
-  background: gray;
-  padding-bottom: 5rem;
-  margin: 2rem;
+.form {
   display: flex;
   flex-direction: column;
-  overflow: hidden; }
+  background: lightgrey;
+  padding: 3.5em;
+  margin-top: 3em; }
 
-.contact_form h3 {
-  text-align: center;
-  padding: 1rem; }
+.form textarea {
+  padding: .5rem;
+  margin: 1em;
+  width: 10rem; }
 
-.contact_form1 {
-  flex-direction: row;
-  display: flex; }
-
-.contact_form2 {
-  flex-direction: row;
-  display: flex; }
+.contact button {
+  padding: .5rem;
+  margin-top: 2em;
+  background-color: #165d99;
+  color: white;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif; }
 
 /* FIND ME */
 section.find_me {
-  background-color: black;
-  padding: 6rem;
-  color: white;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 6rem;
+  background-color: black;
+  color: white; }
 
 .find_me_pics {
-  padding: 3rem;
-  flex-wrap: wrap;
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3rem;
   width: 80%; }
 
 .find_me h1 {
@@ -249,5 +289,5 @@ section.find_me {
 
 @media screen and (max-width: 740px) {
   .find_me_pics img {
-    margin-bottom: 4rem;
-    display: flex; } }
+    display: flex;
+    margin-bottom: 4rem; } }

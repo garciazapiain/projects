@@ -1,32 +1,33 @@
 header {
-  background-color:blue;
-  margin: 0 auto;
   display: flex;
+  justify-content: center;
+  margin: 0 auto;
   padding: 2.5rem;
   width: 100%;
-  justify-content: center;
   overflow: hidden;
+  position: fixed;
+  background-color:rgba(22, 93, 153,0.7);
   @media screen and (max-width: 576px) {
     width: 100%;
     margin: 0 auto;
    }
 }
 
-
 nav a:hover {
   color: white;
+  padding: 2rem;
 }
 
 nav a {
+  justify-content: space-between;
   padding: 1.5rem;
   color: black;
+  background-color: #93b2ce;
   text-decoration: none;
-  background-color: lightblue;
-  justify-content: space-between;
   @media screen and (max-width: 660px) {
     padding: .1em;
     margin-bottom: 2rem;
-    font-size: .8em;
+    font-size: 1.2em;
   }
 }
 
@@ -35,5 +36,6 @@ nav.nav{
    padding:0;
    width: 100%;
    margin: 0 auto;
+   text-align: center;
   }
 }

@@ -5,21 +5,21 @@
 
 * {
     box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
   }
-
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: lightblue;
     width: 100%;
     margin:0;
-  @media screen and (max-width: 576px) {
-    width:100%;
+    background-color: lightblue;
+  @media screen and (max-width: 700px) {
+    min-width:700px;
     height: 100vh;
     margin: 0;
   }
 }
-
 
 h1{
     font-family: 'Montserrat', sans-serif;
@@ -27,15 +27,14 @@ h1{
 }
 
 h2{
-    font-family: 'Montserrat', sans-serif;
     font-size: medium;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
 }
 
-
 footer{
-    background-color: white;
     display: block;
     padding: 2rem;
+    background-color: white;
     text-align: center;
 }
