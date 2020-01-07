@@ -1,0 +1,406 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    background: rgb(255, 255, 255) url('/images/rsz_rsz_jakub-kapusnak-sdbj1dflfpu-unsplash.jpg') center repeat;
+    background-size: cover;
+    @media screen and (min-width: 768px) {
+        background: rgb(255, 255, 255) url('/images/rsz_jakub-kapusnak-sdbj1dflfpu-unsplash.jpg') center no-repeat;
+        background-size: cover;
+    }
+}
+
+
+//Home
+.home {
+    display: flex;
+    flex-direction: row;
+    
+    @media screen and (min-width: 768px) {
+        padding: 0.5rem;
+      }
+}
+
+//Navigation
+.navBar {
+    background-color: rgba(255, 255, 255, 0.8);   
+}
+
+.mr-auto {
+    font-size: 1rem;
+    @media only screen and (min-width:768px){
+        font-size: 1.5rem;
+    }
+}
+    
+.navLaptopItem {
+    margin: 0 1rem 0 1rem;
+    
+}
+
+.navLink {
+    color: darkgreen;
+    @media only screen and (min-width:768px){
+        font-size: 1.5rem;
+    }
+}
+
+.navMobile {
+    display: block;
+    @media only screen and (min-width:768px){
+        display: none;
+    }
+}
+
+.navLaptop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    @media only screen and (max-width:767px){
+        display: none;
+    }
+}
+
+
+//NewMap
+.mapElement {
+    height: 100vh; 
+    width: 110vw;
+    
+    @media screen and (min-width: 768px) {
+        height: 89.5vh;
+        width: 48vw;
+      }
+}
+
+//homepage
+.homepage{
+    display: flex;
+    flex-direction: row;
+}
+
+.pad {
+    padding: 0; 
+}
+
+@media screen and (min-width: 768px) {
+    .pad-left {
+    padding-left: 2rem;
+    }
+
+    .pad-right {
+    padding-right: 1rem;
+    }
+  }
+
+// register
+
+
+//Login
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+//Profile
+.profileDiv {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+    
+    
+}
+
+.communityQuote {
+    display:none;
+    @media screen and (min-width: 768px) {
+        display: block;
+        font-style: italic;
+      }
+    
+}
+.profileIcons {
+    display: flex;
+    flex-direction: row;
+    @media screen and (min-width: 768px) {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    }
+}
+
+.profileIcon {
+    width: 3rem;
+    padding: 0.5rem;
+    
+}
+.profileGreetings{
+    font-weight: bold;
+    @media screen and (min-width: 768px) {
+    font-size: 1.5rem;
+    
+    }
+}
+.profileText {
+    display:none;
+    @media screen and (min-width: 768px) {
+        display: block;
+        font-style: italic;
+    }
+}
+
+.dietaryRestrictionsLink {
+    color: grey;
+    padding: 1rem;
+}
+
+.uploadCard {
+    height: 300px;
+    border: solid lightgrey 1px;
+    text-align: center;
+    padding: auto;
+    background-color: rgba(213, 218, 213, 0.7);
+}
+
+//RestaurantCard
+.restaurantCardsScroll {
+    overflow-y: scroll;
+    height: 430px;
+    @media screen and (min-width: 768px) {
+        height: 449px;
+        
+      }
+}
+
+.restaurantCard {
+    background-color: rgba(213, 218, 213, 0.7);
+}
+
+.clickRestName {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+.restaurantCardMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // @media screen and (min-width: 768px) {
+    //     display: flex;
+    //     flex-direction: column; 
+    //     align-items: center;   
+    // }
+}
+
+a {
+    text-align: center; 
+    text-decoration: none; 
+    color: darkgreen;   
+    
+}
+a:hover {
+    color: rgb(2, 126, 2);
+    
+    }
+
+.restaurantName {
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+
+.restaurantNewName {
+    text-decoration: none;
+    text-align: center;
+}
+
+.restaurantInfo {
+    display: none;
+    // @media screen and (min-width: 768px) {
+    //     display: block;
+    //     text-align: center;
+    //   }
+}
+
+.newRestaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(213, 218, 213, 0.7); 
+       
+}
+
+.btnShowOnMap {
+    
+    text-decoration: none;
+    @media screen and (min-width: 768px) {
+        align-self: center; 
+        text-align: center; 
+        margin: 1rem;
+      }     
+}
+
+.restaurantDetail {
+    justify-content: center;
+    //min-height: 80vh;
+}
+
+.restaurantDetailPageStyle {
+    background-color: rgba(213, 218, 213, 0.8);
+    border-radius: 5px;
+    h1 {
+        color:  darkgreen;
+        text-align: center;
+    }
+    
+}
+.restaurantDetailPageScroll {
+    overflow-y: scroll;
+    height: 530px;
+}
+
+.restaurantDetailBackground { 
+    text-align: center;
+}
+
+//restaurantForm
+
+.restaurantFormBackground {
+    background-color: rgba(255, 255, 255, 0.8);
+    
+    @media screen and (min-width: 768px) {
+        height: 89.5vh;
+        width: 48vw;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+        
+}
+    
+
+.restaurantForm {
+    
+    display:flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    //padding: 15rem; 
+    padding-top: 5rem;
+}
+
+
+
+//DishCard
+.dishCard {
+    background-color: grey;
+    margin:  0 2.5rem 0 2rem;
+    .card-title {
+        margin-bottom: 0;
+    }
+}
+
+.dishDescription {
+    @media screen and (max-width: 768px) {
+        display:none;
+    }
+}
+
+// .addNewDishCard {
+//     margin-left: 0;
+    
+// }
+
+//DishForm
+
+.dishForm {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        margin-top: 2rem;
+    }
+    
+}
+
+//ReviewCard
+.colReviewPic {
+    justify-items: center;    
+}
+
+.dishPic {
+    justify-content: center;
+    // padding-left: 0.2rem;
+    // padding-right: 0.2rem;
+    padding: auto;
+    width: 160px;
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+        width: 150px;
+        
+      }
+    
+}
+
+//Carousel style
+.slick-arrow.slick-prev:before {
+    color: rgb(3, 93, 3);
+    font-size: 25px;
+}
+
+.slick-arrow.slick-prev {
+    left: 10px;
+    z-index: 500;  
+    @media screen and (min-width: 997px) {
+        left: -5px;
+    }
+}
+
+.slick-arrow.slick-next:before {
+    color: rgb(3, 93, 3);
+    font-size: 25px;
+}
+
+.slick-arrow.slick-next {
+    right: 15px;
+    @media screen and (min-width: 768px) {
+        right: 15px;
+    }
+    @media screen and (min-width: 997px) {
+        right: 0;
+    }
+    
+}
+
+//searchbar
+.searchbar {
+    display:flex;
+    flex-direction: column;
+    
+    text-align: center;
+    padding: 2rem;  
+}
+.btnSearch {
+    margin: auto;  
+}

@@ -1,0 +1,44 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2.5rem;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  background-color: rgba(22, 93, 153, 0.7); }
+  @media screen and (max-width: 576px) {
+    header {
+      width: 100%;
+      margin: 0 auto; } }
+
+nav a:hover {
+  color: white;
+  padding: 2rem; }
+
+nav a {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1.5rem;
+  color: black;
+  background-color: #93b2ce;
+  text-decoration: none; }
+  @media screen and (max-width: 660px) {
+    nav a {
+      padding: .1em;
+      margin-bottom: 2rem;
+      font-size: 1.2em; } }
+
+@media screen and (max-width: 576px) {
+  nav.nav {
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; } }
+
+/*# sourceMappingURL=nav.css.map */
