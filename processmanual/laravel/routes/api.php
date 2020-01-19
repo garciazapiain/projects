@@ -17,5 +17,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/operations', 'Api\OperationsController@show');
-Route::post('/operations/new', 'Api\OperationsController@store');
+//Manuals
+Route::get('/manuals', 'Api\ManualsController@show');
+Route::post('/manual/new', 'Api\ManualsController@store');
+
+//Processes
+
+Route::get('/processes', 'Api\ProcessesController@show');
+Route::post('/processes/new', 'Api\ProcessesController@store');

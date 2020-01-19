@@ -26,8 +26,7 @@
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0"
-    }
-    ,
+    },
     "babel": {
         "presets": [
             "@babel/preset-env",
@@ -36,5 +35,8 @@
         "plugins": [
             "@babel/plugin-proposal-class-properties"
         ]
+    },
+    "dependencies": {
+        "react-router-dom": "^5.1.2"
     }
 }

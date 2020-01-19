@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 
-const AddOp = props => {
-    const [formInputValues, setFormInputValues] = useState({name:'operation'});
-    const [formSelectValues, setFormSelectValues] = useState({frequency:'daily', responsible:'operator'});
+const AddProcess = props => {
+    const [formInputValues, setFormInputValues] = useState({name:'process'});
+    const [formSelectValues, setFormSelectValues] = useState({frequency:'daily'});
 
     const handleInputChange = e => {
         setFormInputValues({
@@ -22,21 +22,20 @@ const AddOp = props => {
         e.preventDefault()
         async function postSubmit() {
             // const token = window.localStorage.getItem('token');
-            const response = await fetch('http://www.quanticfood.test:8080/api/operations/new', {
+            const response = await fetch('http://www.quanticfood.test:8080/api/processes/new', {
             method: 'POST',
             // withCredentials: true,
             // credentials: 'include',
-            // headers: {
-            //     'Accept': 'application/json',
-            //     // 'Authorization': 'Bearer ' + token,
-            //     // 'X-Requested-With': 'XMLHttpRequest',
-            //     'Content-Type': 'application/json'
-            // },
+            headers: {
+                'Accept': 'application/json',
+                // 'Authorization': 'Bearer ' + token,
+                // 'X-Requested-With': 'XMLHttpRequest',
+                'Content-Type': 'application/json'
+            },
             responseType: 'json',
             body: JSON.stringify({
                 'name': formInputValues.name,
                 'frequency': formSelectValues.frequency,
-                'responible': formSelectValues.responsible
             }),
             })
             const data = await response.json();
@@ -54,14 +53,14 @@ const AddOp = props => {
 
     return(
         <div style={{display:'flex', flexDirection:"column" }}>
-            <h1>Add Operation</h1>
-            <form>
+            <h1>Add Process</h1>
+            <form method="post">
                 <div>
-                <h3>Name of operation</h3>
+                <h3>Name of process</h3>
                 <input
                     id="name"
                     type="text"
-                    placeholder = "Name of operation"
+                    placeholder = "Name of process"
                     value = {formInputValues.name}
                     onChange = {handleInputChange}
                 />
@@ -73,17 +72,11 @@ const AddOp = props => {
                     <option value="weekly">Weekly</option>
                     <option value="variable">Variable</option>
                 </select>
-                <h3>Responsible</h3>
-                <select id = "responsible" value={formSelectValues.responsible} onChange={handleSelectChange}>
-                    <option value="operator">Operator</option>
-                    <option value="manager">Manager</option>
-                    <option value="admin">Admin</option>
-                </select>
                 </div>
-                <button onClick={handleSubmitButtonClick}>Submit</button>
+                <button onClick={handleSubmitButtonClick}>Add process</button>
             </form>
         </div>
     )
 }
 
-export default AddOp;
+export default AddProcess;

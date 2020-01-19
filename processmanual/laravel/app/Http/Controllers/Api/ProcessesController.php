@@ -4,24 +4,25 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Operation;
+use App\Process;
 
-class OperationsController extends Controller
+class ProcessesController extends Controller
 {
     public function show()
     {
-        $operation = Operation::get();
+        $process = Process::get();
 
-       return $operation;
+       return $process;
     }
 
     public function store(Request $request)
     {
-        $newOperation = Operation::create([
+        $newProcess = Process::create([
             'name' => $request->input('name'),
             'frequency' => $request->input('frequency'),
-            'responsible' => $request->input('responsible')
+            'manual_id' => $request->input('manual_id')
+
         ]);
-        return $newOperation;
+        return $newProcess;
     }
 }

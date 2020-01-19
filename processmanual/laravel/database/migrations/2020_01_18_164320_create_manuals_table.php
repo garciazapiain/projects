@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Operations extends Migration
+class CreateManualsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class Operations extends Migration
      */
     public function up()
     {
-        Schema::create('operations', function (Blueprint $table) {
+        Schema::create('manuals', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name')->nullable();
-            $table->string('frequency');
-            $table->string('responsible');
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -29,7 +27,6 @@ class Operations extends Migration
      */
     public function down()
     {
-        //
-        Schema::dropIfExists('operations');
+        Schema::dropIfExists('manuals');
     }
 }
