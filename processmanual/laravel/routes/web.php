@@ -11,8 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/{path?}', 'app');
 
-Route::get('/operations', 'OperationsController@show');
+
+// Route::get('/', 'PagesController@index');
+
+// //Add Manual
+// Route::get('/manual/add', function () {
+//     return view('pages.addmanual');
+// });
+
+// //My Manuals
+// Route::get('/mymanuals/', function () {
+//     return view('pages.addmanual');
+// });
+
+// //Edit Manual
+// Route::get('/manual/{id}', function ($id) {
+//     return "This is ".$id;
+//     // return view('pages.addmanual');
+// });
+
+
+// // Route::get('/operations', 'OperationsController@show');

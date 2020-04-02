@@ -1,0 +1,100 @@
+a {
+    color:white;
+}
+
+//Navigation
+.navPC {
+    @media only screen and (max-width:500px){
+        display: none;
+    }
+    @media only screen and (min-width:500px){
+        background-color: #045658;
+        color:white;
+        width: 100vw;
+        display:flex;
+    }
+}
+
+.navMobile {
+    @media only screen and (min-width:500px){
+        display: none;
+    }
+    background-color: #045658;
+    display:flex;
+    justify-content: space-between;
+    .logoMobile{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.navMobileItems {
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: right;
+}
+
+.navbar-toggler { 
+    margin: 0 auto; 
+}
+
+.navButton {
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100vw;
+}
+
+//Footer
+
+.footer {
+    display:flex;
+    background-color: #fdac07;
+    width: 100vw;
+    margin:auto;
+}
+
+//Home Page:
+.manualsHomePage { 
+    display:flex;
+    flex-direction: row;
+    height:100vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    .manualsHomePage1 {
+        background-color: #47802b;
+        flex-grow: 1;
+    }
+    .manualsHomePage2 {
+        background-color: #ef6101;
+        flex-grow: 1;
+    }
+    .addManualExpand{
+        background-color: #47802b;
+        flex-grow: 3;
+    }
+    .myManualExpand{
+        background-color: #ef6101;
+        flex-grow: 3;
+    }
+}
+
+.aboutHomePage{
+    background-color: #03161d;
+    color:white;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-grow: 1;
+}
+
+.contactHomePage{
+    background-color: #47802b;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-grow: 1;
+    margin-bottom: 0;
+}

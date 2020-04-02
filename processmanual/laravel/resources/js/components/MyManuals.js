@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import {BrowserRouter, Router, Route, Switch, Redirect} from "react-router-dom";
 import history from '../history.js'
-import Nav from './Components/Nav.js'
-import AddManual from './Components/AddManual.js'
+// import Nav from './Components/Nav.js'
+// import AddManual from './Components/AddManual.js'
 
 const navStyle = {
     width: '100vw',
@@ -25,14 +25,14 @@ const buttonContainerStyle = {
 const navButtonStyle = {
     cursor: 'pointer',
     margin: '0 5px 0 5px 0'
-
 }
 
-const Home = props => {
+const MyManuals = props => {
     const [manual, setManual] = useState();
+    const [ manualId, setManualId ] = useState(null);
     useEffect (() => {
         async function fetchManuals(){
-            const response = await fetch('http://www.quanticfood.test:8080/api/manuals',{
+            const response = await fetch('http://www.processmanual.test:8080/api/manuals',{
                 method: 'GET',
                 headers: {
                     'Accept': 'application/json',
@@ -51,13 +51,16 @@ const Home = props => {
         console.log(manual);
         return (
                 <>
-                <h1>Home</h1>
-                <AddManual/>
                 <h3>My Manuals:</h3>
                 <div>
                     {
                         manual.map((manual,key) => (
-                            <p>{manual.name}</p>
+                            <>
+                            <h4>{manual.name}</h4>
+                            <Link to="/edit/manual" onClick={()=>{
+                                setManualId(manual.id)
+                            }} className="btn btn-primary">Edit manual</Link>
+                            </>
                         ))
                     }
                 </div>
@@ -66,4 +69,4 @@ const Home = props => {
     } return ('Loading...')
 }
 
-export default Home;
+export default MyManuals;

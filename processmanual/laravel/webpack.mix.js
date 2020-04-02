@@ -11,27 +11,5 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.options({
-    processCssUrls: false
-});
- 
-if (!mix.inProduction()) {
-    mix.webpackConfig({
-        devtool: 'source-map'
-    })
-    .sourceMaps()
-}
- 
 mix.react('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
- 
-    .browserSync({
-        host: 'localhost',
-        port: 3000,
-        proxy: {
-            target: 'http://www.quanticfood.test:8080/',
-        }
-    });
- 
-// add versioning 
-mix.version();
+   .sass('resources/sass/app.scss', 'public/css');

@@ -1,19 +1,14 @@
 import React, { useState, useEffect } from 'react'
+import AddProcess from './AddProcess.js'
+import EditManual from './EditManual.js'
 
-const AddProcess = props => {
-    const [formInputValues, setFormInputValues] = useState({name:'process'});
-    const [formSelectValues, setFormSelectValues] = useState({frequency:'daily'});
+const AddManual = props => {
+    const [formInputValues, setFormInputValues] = useState({name:'manual'});
+    const [process, setProcess] = useState({})
 
     const handleInputChange = e => {
         setFormInputValues({
                 ...formInputValues,
-                [e.target.id] : e.target.value
-        })
-    }
-    
-    const handleSelectChange = e => {
-        setFormSelectValues({
-                ...formSelectValues,
                 [e.target.id] : e.target.value
         })
     }
@@ -22,7 +17,7 @@ const AddProcess = props => {
         e.preventDefault()
         async function postSubmit() {
             // const token = window.localStorage.getItem('token');
-            const response = await fetch('http://www.quanticfood.test:8080/api/processes/new', {
+            const response = await fetch('http://www.processmanual.test:8080/api/manual/new', {
             method: 'POST',
             // withCredentials: true,
             // credentials: 'include',
@@ -35,7 +30,6 @@ const AddProcess = props => {
             responseType: 'json',
             body: JSON.stringify({
                 'name': formInputValues.name,
-                'frequency': formSelectValues.frequency,
             }),
             })
             const data = await response.json();
@@ -51,12 +45,13 @@ const AddProcess = props => {
         }
    } 
 
+
     return(
         <div style={{display:'flex', flexDirection:"column" }}>
-            <h1>Add Process</h1>
+            <h1>Add Manual</h1>
             <form method="post">
                 <div>
-                <h3>Name of process</h3>
+                <h3>Name of Manual</h3>
                 <input
                     id="name"
                     type="text"
@@ -65,18 +60,10 @@ const AddProcess = props => {
                     onChange = {handleInputChange}
                 />
                 </div>
-                <div>
-                <h3>Frequency of occurence</h3>
-                <select id = "frequency" value={formSelectValues.frequency} onChange={handleSelectChange}>
-                    <option value="daily">Daily</option>
-                    <option value="weekly">Weekly</option>
-                    <option value="variable">Variable</option>
-                </select>
-                </div>
-                <button onClick={handleSubmitButtonClick}>Add process</button>
+                <button onClick={handleSubmitButtonClick}>Save manual</button>
             </form>
         </div>
     )
 }
 
-export default AddProcess;
+export default AddManual;

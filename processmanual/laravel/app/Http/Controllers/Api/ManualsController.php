@@ -23,4 +23,10 @@ class ManualsController extends Controller
         ]);
         return $newManual;
     }
+    public function edit(Request $request)
+    {
+        $manual = Manual::get($id);
+
+       return $manual;
+    }
 }
