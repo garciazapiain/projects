@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ReactDOM from "react-dom";
 import { Link } from 'react-router-dom'
 import {BrowserRouter, Router, Route, Switch, Redirect} from "react-router-dom";
 import history from '../history.js'
@@ -19,7 +20,8 @@ const Home = () => {
         setaddClass2(!addClass2);
         console.log('My manual class is set to ' + addClass2)
     }
-    
+
+
     return (
                 <>
                 <div className='manualsHomePage'>
@@ -28,11 +30,13 @@ const Home = () => {
                     <div className={`${addClass2 ? 'myManualExpand':'manualsHomePage2'}`} onMouseEnter={myManual} onMouseLeave={myManual}>
                         <h2>My Manuals</h2></div>
                 </div>
-                <div id= "aboutHomePage" className='aboutHomePage'>
+                <div id='aboutHomePage' className='aboutHomePage'
+                    >
                     <h3>About</h3>
                 </div>
-                <div>
-                    <h3 className='contactHomePage'>Contact</h3>
+                <div id='contactHomePage' className='contactHomePage'
+                    >
+                    <h3>Contact</h3>
                 </div>
                 </>
          )

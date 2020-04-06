@@ -39,6 +39,8 @@
     "dependencies": {
         "bootstrap": "^4.4.1",
         "react-router-dom": "^5.1.2",
+        "react-router-hash-link": "^1.2.2",
+        "react-scroll": "^1.7.16",
         "reactstrap": "^8.4.1"
     }
 }

@@ -1,11 +1,18 @@
 import React, {useState} from 'react';
-import {   BrowserRouter,Link } from 'react-router-dom'
+import {   BrowserRouter } from 'react-router-dom'
 import '../../sass/index.scss'
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Button } from 'reactstrap';
+import Home from './Home.js'
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const NavigationBar = props => {
     const [collapsed, setCollapsed] = useState(true);
     const toggleNavbar = () => setCollapsed(!collapsed);
+    const aboutScroll = () => {
+      console.log('hey')
+    }
+    
     return (
        <>
         <div className='navPC'>
@@ -13,8 +20,11 @@ const NavigationBar = props => {
             <div className='navButton'>
                 <Link to='/manual/mymanuals'><div>My Manuals</div></Link>
                 <Link to='/manual/new'><div>Add Manual</div></Link>
-                <Link to='/'><div><a href="#aboutHomePage">About</a></div></Link>
-                <Link to='/'><div>Contact</div></Link>
+                <Link  to=
+                  '/#aboutHomePage'>
+                  <div>About</div></Link>
+                <Link to='/#contactHomePage'>
+                  <div>Contact</div></Link>
                 <Link to='/'><div>Profile</div></Link>
             </div>
         </div>

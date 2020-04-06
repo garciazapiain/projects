@@ -52065,6 +52065,134 @@ if (true) {
 
 /***/ }),
 
+/***/ "./node_modules/react-router-hash-link/lib/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-router-hash-link/lib/index.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+exports.genericHashLink = genericHashLink;
+exports.HashLink = HashLink;
+exports.NavHashLink = NavHashLink;
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var hashFragment = '';
+var observer = null;
+var asyncTimerId = null;
+var scrollFunction = null;
+
+function reset() {
+  hashFragment = '';
+  if (observer !== null) observer.disconnect();
+  if (asyncTimerId !== null) {
+    window.clearTimeout(asyncTimerId);
+    asyncTimerId = null;
+  }
+}
+
+function getElAndScroll() {
+  var element = document.getElementById(hashFragment);
+  if (element !== null) {
+    scrollFunction(element);
+    reset();
+    return true;
+  }
+  return false;
+}
+
+function hashLinkScroll() {
+  // Push onto callback queue so it runs after the DOM is updated
+  window.setTimeout(function () {
+    if (getElAndScroll() === false) {
+      if (observer === null) {
+        observer = new MutationObserver(getElAndScroll);
+      }
+      observer.observe(document, {
+        attributes: true,
+        childList: true,
+        subtree: true
+      });
+      // if the element doesn't show up in 10 seconds, stop checking
+      asyncTimerId = window.setTimeout(function () {
+        reset();
+      }, 10000);
+    }
+  }, 0);
+}
+
+function genericHashLink(props, As) {
+  function handleClick(e) {
+    reset();
+    if (props.onClick) props.onClick(e);
+    if (typeof props.to === 'string') {
+      hashFragment = props.to.split('#').slice(1).join('#');
+    } else if (_typeof(props.to) === 'object' && typeof props.to.hash === 'string') {
+      hashFragment = props.to.hash.replace('#', '');
+    }
+    if (hashFragment !== '') {
+      scrollFunction = props.scroll || function (el) {
+        return props.smooth ? el.scrollIntoView({ behavior: "smooth" }) : el.scrollIntoView();
+      };
+      hashLinkScroll();
+    }
+  }
+
+  var scroll = props.scroll,
+      smooth = props.smooth,
+      filteredProps = _objectWithoutProperties(props, ['scroll', 'smooth']);
+
+  return _react2.default.createElement(
+    As,
+    _extends({}, filteredProps, { onClick: handleClick }),
+    props.children
+  );
+}
+
+function HashLink(props) {
+  return genericHashLink(props, _reactRouterDom.Link);
+}
+
+function NavHashLink(props) {
+  return genericHashLink(props, _reactRouterDom.NavLink);
+}
+
+var propTypes = {
+  onClick: _propTypes2.default.func,
+  children: _propTypes2.default.node,
+  scroll: _propTypes2.default.func,
+  to: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object])
+};
+
+HashLink.propTypes = propTypes;
+NavHashLink.propTypes = propTypes;
+
+/***/ }),
+
 /***/ "./node_modules/react-router/esm/react-router.js":
 /*!*******************************************************!*\
   !*** ./node_modules/react-router/esm/react-router.js ***!
@@ -69219,8 +69347,6 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var EditManual = function EditManual(props) {
-  console.log(props.ManualId);
-
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(),
       _useState2 = _slicedToArray(_useState, 2),
       manual = _useState2[0],
@@ -69243,12 +69369,12 @@ var EditManual = function EditManual(props) {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return fetch("/api/edit/manual/".concat(props.manualId), {
+                return fetch("api/manual/edit/".concat(props.manualId), {
                   method: 'GET',
                   headers: {
                     'Accept': 'application/json',
-                    'Authorization': 'Bearer ' + token,
-                    'X-Requested-With': 'XMLHttpRequest',
+                    // 'Authorization': 'Bearer ' + token,
+                    // 'X-Requested-With': 'XMLHttpRequest',
                     'Content-Type': 'application/json'
                   }
                 });
@@ -69275,7 +69401,7 @@ var EditManual = function EditManual(props) {
 
     fetchManual();
   }, [props.ManualId]);
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "Hey"));
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "Hey the id of this manual is ", props.manualId));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (EditManual);
@@ -69316,12 +69442,14 @@ var Footer = function Footer(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _history_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../history.js */ "./resources/js/history.js");
-/* harmony import */ var _NavigationBar_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NavigationBar.js */ "./resources/js/components/NavigationBar.js");
-/* harmony import */ var _AddManual_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./AddManual.js */ "./resources/js/components/AddManual.js");
-/* harmony import */ var _EditManual_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./EditManual.js */ "./resources/js/components/EditManual.js");
-/* harmony import */ var _MyManuals_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./MyManuals.js */ "./resources/js/components/MyManuals.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _history_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../history.js */ "./resources/js/history.js");
+/* harmony import */ var _NavigationBar_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./NavigationBar.js */ "./resources/js/components/NavigationBar.js");
+/* harmony import */ var _AddManual_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AddManual.js */ "./resources/js/components/AddManual.js");
+/* harmony import */ var _EditManual_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./EditManual.js */ "./resources/js/components/EditManual.js");
+/* harmony import */ var _MyManuals_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./MyManuals.js */ "./resources/js/components/MyManuals.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
@@ -69329,6 +69457,7 @@ function _nonIterableRest() { throw new TypeError("Invalid attempt to destructur
 function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -69373,9 +69502,10 @@ var Home = function Home() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "My Manuals"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "aboutHomePage",
     className: "aboutHomePage"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "contactHomePage",
     className: "contactHomePage"
-  }, "Contact")));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Contact")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
@@ -69417,36 +69547,15 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
  // import Nav from './Components/Nav.js'
 // import AddManual from './Components/AddManual.js'
 
-var navStyle = {
-  width: '100vw',
-  backgroundColor: 'lightblue',
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  padding: '0 20px 0 20px'
-};
-var buttonContainerStyle = {
-  flexBasis: '15%',
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  padding: '0 20px 0 20px'
-};
-var navButtonStyle = {
-  cursor: 'pointer',
-  margin: '0 5px 0 5px 0'
-};
-
 var MyManuals = function MyManuals(props) {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(),
       _useState2 = _slicedToArray(_useState, 2),
-      manual = _useState2[0],
-      setManual = _useState2[1];
+      manuals = _useState2[0],
+      setManuals = _useState2[1];
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null),
-      _useState4 = _slicedToArray(_useState3, 2),
-      manualId = _useState4[0],
-      setManualId = _useState4[1];
+  function editManual(id) {
+    props.setManualId(id);
+  }
 
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     function fetchManuals() {
@@ -69480,10 +69589,9 @@ var MyManuals = function MyManuals(props) {
 
               case 5:
                 data = _context.sent;
-                setManual(data);
-                console.log('restdata', data);
+                setManuals(data);
 
-              case 8:
+              case 7:
               case "end":
                 return _context.stop();
             }
@@ -69496,13 +69604,12 @@ var MyManuals = function MyManuals(props) {
     fetchManuals();
   }, []);
 
-  if (manual) {
-    console.log(manual);
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "My Manuals:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, manual.map(function (manual, key) {
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", null, manual.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-        to: "/edit/manual",
+  if (manuals) {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "My Manuals:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, manuals.map(function (manual, key) {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", null, manual.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, manual.id), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/manual/edit/",
         onClick: function onClick() {
-          setManualId(manual.id);
+          editManual(manual.id);
         },
         className: "btn btn-primary"
       }, "Edit manual"));
@@ -69531,6 +69638,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../sass/index.scss */ "./resources/sass/index.scss");
 /* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_sass_index_scss__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
+/* harmony import */ var _Home_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Home.js */ "./resources/js/components/Home.js");
+/* harmony import */ var react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-hash-link */ "./node_modules/react-router-hash-link/lib/index.js");
+/* harmony import */ var react_router_hash_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__);
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
@@ -69538,6 +69648,8 @@ function _nonIterableRest() { throw new TypeError("Invalid attempt to destructur
 function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
 
 
 
@@ -69554,31 +69666,33 @@ var NavigationBar = function NavigationBar(props) {
     return setCollapsed(!collapsed);
   };
 
+  var aboutScroll = function aboutScroll() {
+    console.log('hey');
+  };
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "navPC"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__["HashLink"], {
     to: "/"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "images/logo.png"
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "navButton"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__["HashLink"], {
     to: "/manual/mymanuals"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "My Manuals")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "My Manuals")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__["HashLink"], {
     to: "/manual/new"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Add Manual")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#aboutHomePage"
-  }, "About"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Contact")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Add Manual")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__["HashLink"], {
+    to: "/#aboutHomePage"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__["HashLink"], {
+    to: "/#contactHomePage"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Contact")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__["HashLink"], {
     to: "/"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Profile")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "navMobile"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "logoMobile"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__["HashLink"], {
     to: "/"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "images/logo.png"
@@ -69595,19 +69709,19 @@ var NavigationBar = function NavigationBar(props) {
     navbar: true
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "navMobileItems"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__["HashLink"], {
     to: "/manual/mymanuals",
     className: "navLink"
-  }, "My Manuals"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, "My Manuals"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__["HashLink"], {
     to: "/manual/new",
     className: "navLink"
-  }, "Add Manual"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, "Add Manual"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__["HashLink"], {
     to: "/",
     className: "navLink"
-  }, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__["HashLink"], {
     to: "/",
     className: "navLink"
-  }, "Contact"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, "Contact"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__["HashLink"], {
     to: "/",
     className: "navLink"
   }, "Profile")))))))));
@@ -69638,6 +69752,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _EditManual__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./EditManual */ "./resources/js/components/EditManual.js");
 /* harmony import */ var _MyManuals__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./MyManuals */ "./resources/js/components/MyManuals.js");
 /* harmony import */ var _Footer_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Footer.js */ "./resources/js/components/Footer.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -69653,12 +69775,12 @@ var NotFound = function NotFound() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Not Found");
 };
 
-var containerStyle = {
-  display: "flex",
-  flexDirection: "column"
-};
-
 var Routes = function Routes(props) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
+      _useState2 = _slicedToArray(_useState, 2),
+      manualId = _useState2[0],
+      setManualId = _useState2[1];
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], {
     history: _history__WEBPACK_IMPORTED_MODULE_3__["default"]
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavigationBar_js__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
@@ -69671,10 +69793,13 @@ var Routes = function Routes(props) {
     component: _AddManual_js__WEBPACK_IMPORTED_MODULE_5__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     path: "/manual/mymanuals",
-    exact: true,
-    component: _MyManuals__WEBPACK_IMPORTED_MODULE_8__["default"]
+    render: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MyManuals__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        setManualId: setManualId
+      });
+    }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-    path: "/manual/edit",
+    path: "/manual/edit/",
     render: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_EditManual__WEBPACK_IMPORTED_MODULE_7__["default"], {
         manualId: manualId

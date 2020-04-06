@@ -12,21 +12,19 @@ class ManualsController extends Controller
     {
         $manual = Manual::get();
 
-       return $manual;
+        return $manual;
     }
 
     public function store(Request $request)
     {
         $newManual = Manual::create([
             'name' => $request->input('name'),
-
         ]);
         return $newManual;
     }
     public function edit(Request $request)
     {
         $manual = Manual::get($id);
-
-       return $manual;
+        return $manual;
     }
 }

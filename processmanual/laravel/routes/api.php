@@ -20,7 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 //Manuals
 Route::get('/manuals', 'Api\ManualsController@show');
 Route::post('/manual/new', 'Api\ManualsController@store');
-Route::get('/edit/manual/{$id}', 'Api\ManualsController@edit');
+Route::get('/manual/edit/{$id}', 'Api\ManualsController@edit');
 
 //Processes
 
