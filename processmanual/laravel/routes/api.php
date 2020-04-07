@@ -18,9 +18,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 //Manuals
-Route::get('/manuals', 'Api\ManualsController@show');
-Route::post('/manual/new', 'Api\ManualsController@store');
-Route::get('/manual/edit/{$id}', 'Api\ManualsController@edit');
+// Route::get('/manuals', 'Api\ManualsController@index');
+// Route::get('/manuals/{$id}', 'Api\ManualsController@show');
+// Route::post('/manual/new', 'Api\ManualsController@store');
+// Route::get('/manual/edit/{$id}', 'Api\ManualsController@edit');
+Route::resource('manual', 'Api\ManualsController');
 
 //Processes
 

@@ -3,10 +3,11 @@ import {render} from 'react-dom';
 import {BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import history from '../history'
 import Home from './Home.js'
-import AddManual from './AddManual.js';
 import NavigationBar from './NavigationBar.js';
-import EditManual from './EditManual';
 import MyManuals from './MyManuals';
+import AddManual from './AddManual.js';
+import ViewManual from './ViewManual.js'
+import EditManual from './EditManual';
 import Footer from './Footer.js'
 
 const NotFound = () => {
@@ -14,7 +15,7 @@ const NotFound = () => {
 }
 
 const Routes = props => {
-  const [ manualId, setManualId ] = useState(null);
+  const [ manual, setManual ] = useState([]);
  
   return(
       <BrowserRouter history={history}>
@@ -25,13 +26,19 @@ const Routes = props => {
           <Route path='/manual/mymanuals' 
             render = {()=>    
               <MyManuals
-                setManualId={setManualId}
+                setManual={setManual}
                 />                           
               }/>
             <Route path='/manual/edit/' 
               render={()=>
               <EditManual
-                manualId={manualId}
+                manual={manual}
+              />
+            }/>
+            <Route path='/manual/view/' 
+              render={()=>
+              <ViewManual
+                manual={manual}
               />
             }/>
           <Route component={NotFound} />

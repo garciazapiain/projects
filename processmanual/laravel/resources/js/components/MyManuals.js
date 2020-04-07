@@ -6,12 +6,15 @@ import history from '../history.js'
 // import AddManual from './Components/AddManual.js'
 const MyManuals = (props) => {
     const [manuals, setManuals] = useState();
-    function editManual (id) {
-        props.setManualId(id);
+    function editManual (manual) {
+        props.setManual(manual);
+    }
+    function viewManual (manual) {
+        props.setManual(manual);
     }
     useEffect (() => {
         async function fetchManuals(){
-            const response = await fetch('http://www.processmanual.test:8080/api/manuals',{
+            const response = await fetch('http://www.processmanual.test:8080/api/manual',{
                 method: 'GET',
                 headers: {
                     'Accept': 'application/json',
@@ -33,10 +36,14 @@ const MyManuals = (props) => {
                     {
                         manuals.map((manual,key) => (
                             <>
-                            <h4>{manual.name}</h4>
-                            <p>{manual.id}</p>
-                            <Link to="/manual/edit/" onClick={()=>{ editManual(manual.id)
-                            }} className="btn btn-primary">Edit manual</Link>
+                            <div>
+                                <h4>{manual.name}</h4>
+                                <p>{manual.id}</p>
+                                <Link to="/manual/edit/" onClick={()=>{ editManual(manual)
+                                }} className="btn btn-primary">Edit manual</Link>
+                                <Link to="/manual/view/" onClick={()=>{ viewManual(manual)
+                                }} className="btn btn-primary">View</Link>
+                            </div>
                             </>
                         ))
                     }

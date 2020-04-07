@@ -17,7 +17,7 @@ const AddManual = props => {
         e.preventDefault()
         async function postSubmit() {
             // const token = window.localStorage.getItem('token');
-            const response = await fetch('http://www.processmanual.test:8080/api/manual/new', {
+            const response = await fetch('http://www.processmanual.test:8080/api/manual', {
             method: 'POST',
             // withCredentials: true,
             // credentials: 'include',
