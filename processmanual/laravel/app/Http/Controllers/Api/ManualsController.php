@@ -91,7 +91,8 @@ class ManualsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $manual = Manual::find($id);
+        $manual->delete();
     }
 }
 

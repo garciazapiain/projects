@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import {render} from 'react-dom';
-import {BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-import history from '../history'
+import {Router} from 'react-router-dom';
+import {HashRouter, Route, Switch, Redirect } from "react-router-dom";
+import history from '../history.js'
 import Home from './Home.js'
 import NavigationBar from './NavigationBar.js';
 import MyManuals from './MyManuals';
@@ -16,26 +16,29 @@ const NotFound = () => {
 
 const Routes = props => {
   const [ manual, setManual ] = useState([]);
+  const [ key, setKey ] = useState([]);
  
   return(
-      <BrowserRouter history={history}>
+      <HashRouter history={history}>
         <NavigationBar />
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/manual/new' exact component={AddManual} />
+          <Route path='/manual/new' component={AddManual} />
           <Route path='/manual/mymanuals' 
             render = {()=>    
               <MyManuals
                 setManual={setManual}
+                setKey={setKey}
                 />                           
               }/>
-            <Route path='/manual/edit/' 
+            <Route path={`/manual/edit/${manual.id}`} 
               render={()=>
               <EditManual
                 manual={manual}
+                key={key}
               />
             }/>
-            <Route path='/manual/view/' 
+            <Route path={`/manual/view/${manual.id}`} 
               render={()=>
               <ViewManual
                 manual={manual}
@@ -44,7 +47,7 @@ const Routes = props => {
           <Route component={NotFound} />
         </Switch>
         <Footer/>
-      </BrowserRouter>
+      </HashRouter>
   )
 };
 

@@ -20,7 +20,7 @@ const EditManual = (props) => {
             fetchManual();
     },[props.Manual]);
     return (
-        <div>
+        <div key={props.key}>
             <h1>Edit Manual</h1>
             <h2>Manual id: {props.manual.id}</h2>
             <h2>Manual name: {props.manual.name}</h2>
