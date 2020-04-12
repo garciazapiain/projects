@@ -11,9 +11,14 @@ a {
         background-color: #045658;
         color:white;
         width: 100vw;
+        height:56px;
         display:flex;
         top: 0;
         position: fixed;
+        .logoPC{
+            display: flex;
+            align-items: center;
+        }
     }
 }
 
@@ -24,6 +29,7 @@ a {
     background-color: #045658;
     display:flex;
     justify-content: space-between;
+    align-items: center;
     top: 0;
     position: fixed;
     width: 100vw;
@@ -68,6 +74,7 @@ a {
     height:100vh;
     width: 100vw;
     justify-content: space-evenly;
+    padding-top: 56px;
     .manualsHomePage1 {
         background-color: #47802b;
         flex-grow: 1;
@@ -93,6 +100,7 @@ a {
     height: 100vh;
     width: 100vw;
     flex-grow: 1;
+    padding-top: 56px;
 }
 
 .contactHomePage{
@@ -102,6 +110,7 @@ a {
     width: 100vw;
     flex-grow: 1;
     margin-bottom: 0;
+    padding-top: 56px;
 }
 
 //My Manuals

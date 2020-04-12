@@ -2438,7 +2438,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "a {\n  color: white;\n}\n\n@media only screen and (max-width: 500px) {\n  .navPC {\n    display: none;\n  }\n}\n@media only screen and (min-width: 500px) {\n  .navPC {\n    background-color: #045658;\n    color: white;\n    width: 100vw;\n    display: -webkit-box;\n    display: flex;\n    top: 0;\n    position: fixed;\n  }\n}\n\n.navMobile {\n  background-color: #045658;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  top: 0;\n  position: fixed;\n  width: 100vw;\n}\n@media only screen and (min-width: 500px) {\n  .navMobile {\n    display: none;\n  }\n}\n.navMobile .logoMobile {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n.navMobileItems {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  text-align: right;\n  -webkit-box-pack: right;\n          justify-content: right;\n}\n\n.navbar-toggler {\n  margin: 0 auto;\n}\n\n.navButton {\n  padding: 0 20px 0 20px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  -webkit-box-align: center;\n          align-items: center;\n  width: 100vw;\n}\n\n.footer {\n  display: -webkit-box;\n  display: flex;\n  background-color: #fdac07;\n  width: 100vw;\n  margin: auto;\n}\n\n.manualsHomePage {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n}\n.manualsHomePage .manualsHomePage1 {\n  background-color: #47802b;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .manualsHomePage2 {\n  background-color: #ef6101;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .addManualExpand {\n  background-color: #47802b;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n.manualsHomePage .myManualExpand {\n  background-color: #ef6101;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n\n.aboutHomePage {\n  background-color: #03161d;\n  color: white;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n\n.contactHomePage {\n  background-color: #47802b;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  margin-bottom: 0;\n}\n\n.myManuals-each {\n  display: -webkit-box;\n  display: flex;\n  margin: 1em;\n  justify-content: space-around;\n}\n\n.myManuals-each-child {\n  width: 24px;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.myManuals-each-child-name {\n  width: 47px;\n}\n\n.myManuals-each-child-id {\n  width: 1px;\n}\n\nbutton {\n  display: inline-block;\n  font-weight: 300;\n  color: #212529;\n  text-align: center;\n  vertical-align: middle;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-color: #ef6101;\n  border: 1px solid transparent;\n  padding: 0.175rem 0.5rem;\n  font-size: 1rem;\n  line-height: 1.5;\n  border-radius: 0.25rem;\n  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n}\n\n.button-edit {\n  background-color: #ef6101;\n  color: white;\n}\n\n.button-view {\n  background-color: #079a9c;\n  color: white;\n}\n\n.button-delete {\n  background-color: red;\n  color: white;\n}\n\n.button-create {\n  margin: 2em;\n}", ""]);
+exports.push([module.i, "a {\n  color: white;\n}\n\n@media only screen and (max-width: 500px) {\n  .navPC {\n    display: none;\n  }\n}\n@media only screen and (min-width: 500px) {\n  .navPC {\n    background-color: #045658;\n    color: white;\n    width: 100vw;\n    height: 56px;\n    display: -webkit-box;\n    display: flex;\n    top: 0;\n    position: fixed;\n  }\n  .navPC .logoPC {\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-align: center;\n            align-items: center;\n  }\n}\n\n.navMobile {\n  background-color: #045658;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n          align-items: center;\n  top: 0;\n  position: fixed;\n  width: 100vw;\n}\n@media only screen and (min-width: 500px) {\n  .navMobile {\n    display: none;\n  }\n}\n.navMobile .logoMobile {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n.navMobileItems {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  text-align: right;\n  -webkit-box-pack: right;\n          justify-content: right;\n}\n\n.navbar-toggler {\n  margin: 0 auto;\n}\n\n.navButton {\n  padding: 0 20px 0 20px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  -webkit-box-align: center;\n          align-items: center;\n  width: 100vw;\n}\n\n.footer {\n  display: -webkit-box;\n  display: flex;\n  background-color: #fdac07;\n  width: 100vw;\n  margin: auto;\n}\n\n.manualsHomePage {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  padding-top: 56px;\n}\n.manualsHomePage .manualsHomePage1 {\n  background-color: #47802b;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .manualsHomePage2 {\n  background-color: #ef6101;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .addManualExpand {\n  background-color: #47802b;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n.manualsHomePage .myManualExpand {\n  background-color: #ef6101;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n\n.aboutHomePage {\n  background-color: #03161d;\n  color: white;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  padding-top: 56px;\n}\n\n.contactHomePage {\n  background-color: #47802b;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  margin-bottom: 0;\n  padding-top: 56px;\n}\n\n.myManuals-each {\n  display: -webkit-box;\n  display: flex;\n  margin: 1em;\n  justify-content: space-around;\n}\n\n.myManuals-each-child {\n  width: 24px;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.myManuals-each-child-name {\n  width: 47px;\n}\n\n.myManuals-each-child-id {\n  width: 1px;\n}\n\nbutton {\n  display: inline-block;\n  font-weight: 300;\n  color: #212529;\n  text-align: center;\n  vertical-align: middle;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-color: #ef6101;\n  border: 1px solid transparent;\n  padding: 0.175rem 0.5rem;\n  font-size: 1rem;\n  line-height: 1.5;\n  border-radius: 0.25rem;\n  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n}\n\n.button-edit {\n  background-color: #ef6101;\n  color: white;\n}\n\n.button-view {\n  background-color: #079a9c;\n  color: white;\n}\n\n.button-delete {\n  background-color: red;\n  color: white;\n}\n\n.button-create {\n  margin: 2em;\n}", ""]);
 
 // exports
 
@@ -69480,27 +69480,31 @@ var Home = function Home() {
       addClass2 = _useState4[0],
       setaddClass2 = _useState4[1];
 
-  var addManual = function addManual() {
-    setaddClass(!addClass);
-    console.log('Add manual class is set to ' + addClass);
+  var addManualHover = function addManualHover() {
+    setaddClass(!addClass); // console.log('Add manual class is set to ' + addClass)
   };
 
-  var myManual = function myManual() {
-    setaddClass2(!addClass2);
-    console.log('My manual class is set to ' + addClass2);
+  var myManualHover = function myManualHover() {
+    setaddClass2(!addClass2); // console.log('My manual class is set to ' + addClass2)
   };
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "manualsHomePage"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "".concat(addClass ? 'addManualExpand' : 'manualsHomePage1'),
-    onMouseEnter: addManual,
-    onMouseLeave: addManual
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Add Manual")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    onMouseEnter: addManualHover,
+    onMouseLeave: addManualHover
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Add Manual"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "btn btn-primary",
+    to: "/manual/new"
+  }, "Click")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "".concat(addClass2 ? 'myManualExpand' : 'manualsHomePage2'),
-    onMouseEnter: myManual,
-    onMouseLeave: myManual
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "My Manuals"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    onMouseEnter: myManualHover,
+    onMouseLeave: myManualHover
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "My Manuals"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "btn btn-primary",
+    to: "/manual/new"
+  }, "Click"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "aboutHomePage",
     className: "aboutHomePage"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -69635,7 +69639,7 @@ var MyManuals = function MyManuals(props) {
   if (manuals) {
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
       style: {
-        paddingTop: '2em'
+        paddingTop: '56px'
       }
     }, "My Manuals:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, manuals.map(function (manual, key) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -69743,9 +69747,11 @@ var NavigationBar = function NavigationBar(props) {
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "navPC"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "logoPC"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__["HashLink"], {
     to: "/"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "images/logo.png"
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "navButton"
@@ -69787,10 +69793,10 @@ var NavigationBar = function NavigationBar(props) {
     to: "/manual/new",
     className: "navLink"
   }, "Add Manual"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__["HashLink"], {
-    to: "/",
+    to: "/#aboutHomePage",
     className: "navLink"
   }, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__["HashLink"], {
-    to: "/",
+    to: "/#contactHomePage",
     className: "navLink"
   }, "Contact"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_5__["HashLink"], {
     to: "/",

@@ -12,23 +12,28 @@ const Home = () => {
     const [addClass, setaddClass] = useState(false);
     const [addClass2, setaddClass2] = useState(false);
     
-    const addManual = () => {
+    const addManualHover = () => {
         setaddClass(!addClass);
-        console.log('Add manual class is set to ' + addClass)
+        // console.log('Add manual class is set to ' + addClass)
     }
-    const myManual = () => {
+
+    const myManualHover = () => {
         setaddClass2(!addClass2);
-        console.log('My manual class is set to ' + addClass2)
+        // console.log('My manual class is set to ' + addClass2)
     }
 
 
     return (
                 <>
                 <div className='manualsHomePage'>
-                    <div className={`${addClass ? 'addManualExpand':'manualsHomePage1'}`} onMouseEnter={addManual} onMouseLeave={addManual}>
-                        <h2>Add Manual</h2></div>
-                    <div className={`${addClass2 ? 'myManualExpand':'manualsHomePage2'}`} onMouseEnter={myManual} onMouseLeave={myManual}>
-                        <h2>My Manuals</h2></div>
+                    <div className={`${addClass ? 'addManualExpand':'manualsHomePage1'}`} onMouseEnter={addManualHover} onMouseLeave={addManualHover}>
+                        <h2>Add Manual</h2>
+                        <Link className="btn btn-primary" to='/manual/new'>Click</Link>
+                    </div>
+                    <div className={`${addClass2 ? 'myManualExpand':'manualsHomePage2'}`} onMouseEnter={myManualHover} onMouseLeave={myManualHover}>
+                        <h2>My Manuals</h2>
+                        <Link className="btn btn-primary" to='/manual/new'>Click</Link>
+                        </div>
                 </div>
                 <div id='aboutHomePage' className='aboutHomePage'
                     >

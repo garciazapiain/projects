@@ -52,7 +52,7 @@ const MyManuals = (props) => {
     if (manuals){
         return (
                 <>
-                <h1 style={{paddingTop:'2em'}}>My Manuals:</h1>
+                <h1 style={{paddingTop:'56px'}}>My Manuals:</h1>
                 <div>
                     {
                         manuals.map((manual,key) => (
