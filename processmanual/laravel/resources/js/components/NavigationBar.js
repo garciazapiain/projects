@@ -1,17 +1,12 @@
 import React, {useState} from 'react';
-import {   BrowserRouter } from 'react-router-dom'
 import '../../sass/index.scss'
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Button } from 'reactstrap';
-import Home from './Home.js'
 import { HashLink as Link } from 'react-router-hash-link';
 
 
 const NavigationBar = props => {
     const [collapsed, setCollapsed] = useState(true);
     const toggleNavbar = () => setCollapsed(!collapsed);
-    const aboutScroll = () => {
-      console.log('hey')
-    }
     
     return (
        <>

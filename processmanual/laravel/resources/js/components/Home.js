@@ -1,12 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ReactDOM from "react-dom";
 import { Link } from 'react-router-dom'
-import {BrowserRouter, Router, Route, Switch, Redirect} from "react-router-dom";
-import history from '../history.js'
-import Nav from './NavigationBar.js'
-import AddManual from './AddManual.js'
-import EditManual from './EditManual.js'
-import MyManuals from './MyManuals.js'
 
 const Home = () => {
     const [addClass, setaddClass] = useState(false);
@@ -14,12 +7,10 @@ const Home = () => {
     
     const addManualHover = () => {
         setaddClass(!addClass);
-        // console.log('Add manual class is set to ' + addClass)
     }
 
     const myManualHover = () => {
         setaddClass2(!addClass2);
-        // console.log('My manual class is set to ' + addClass2)
     }
 
 
@@ -32,7 +23,7 @@ const Home = () => {
                     </div>
                     <div className={`${addClass2 ? 'myManualExpand':'manualsHomePage2'}`} onMouseEnter={myManualHover} onMouseLeave={myManualHover}>
                         <h2>My Manuals</h2>
-                        <Link className="btn btn-primary" to='/manual/new'>Click</Link>
+                        <Link className="btn btn-primary" to='/manual/mymanuals'>Click</Link>
                         </div>
                 </div>
                 <div id='aboutHomePage' className='aboutHomePage'

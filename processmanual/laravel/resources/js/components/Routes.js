@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import {Router} from 'react-router-dom';
 import {HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import history from '../history.js'
 import Home from './Home.js'
@@ -15,9 +14,7 @@ const NotFound = () => {
 }
 
 const Routes = props => {
-  const [ manual, setManual ] = useState([]);
-  const [ key, setKey ] = useState([]);
- 
+  const [ manual, setManual ] = useState([]); 
   return(
       <HashRouter history={history}>
         <NavigationBar />
@@ -28,14 +25,12 @@ const Routes = props => {
             render = {()=>    
               <MyManuals
                 setManual={setManual}
-                setKey={setKey}
                 />                           
               }/>
             <Route path={`/manual/edit/${manual.id}`} 
               render={()=>
               <EditManual
                 manual={manual}
-                key={key}
               />
             }/>
             <Route path={`/manual/view/${manual.id}`} 

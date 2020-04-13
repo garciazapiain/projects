@@ -1,22 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
-import {BrowserRouter, Router, Route, Switch, Redirect} from "react-router-dom";
-import history from '../history.js'
-import { Button } from 'reactstrap';
-// import Nav from './Components/Nav.js'
-// import AddManual from './Components/AddManual.js'
+
 const MyManuals = (props) => {
     const [manuals, setManuals] = useState();
-    const [key, setKey] = useState()
+    const [deletes, setDeletes] = useState(false);
     
     function editManual (manual) {
         props.setManual(manual);
-        props.setKey(key)
     }
 
     function viewManual (manual) {
         props.setManual(manual);
-        props.setKey(key);
     }
 
     function deleteManual (manual) {
@@ -31,6 +25,7 @@ const MyManuals = (props) => {
                 },
             })  
         }
+        setDeletes(!deletes);
     }
 
     useEffect (() => {
@@ -48,17 +43,18 @@ const MyManuals = (props) => {
                 setManuals(data)
             }
                 fetchManuals();
-            },[])
+            },[deletes]);
+
     if (manuals){
         return (
                 <>
                 <h1 style={{paddingTop:'56px'}}>My Manuals:</h1>
                 <div>
                     {
-                        manuals.map((manual,key) => (
+                        manuals.map((manual) => (
                             <>
                             <div style={{borderBottom:"1px solid black"}}>
-                                <div className="myManuals-each" key={key}>
+                                <div className="myManuals-each">
                                     <div className="myManuals-each-child-id">
                                     {/* Manual ID */}
                                     <p>{manual.id}</p>

@@ -18,12 +18,12 @@ const EditManual = (props) => {
             setManual(data);
         }
             fetchManual();
-    },[props.Manual]);
+    },[]);
     return (
-        <div key={props.key}>
+        <div>
             <h1>Edit Manual</h1>
-            <h2>Manual id: {props.manual.id}</h2>
-            <h2>Manual name: {props.manual.name}</h2>
+            <h2>Manual id: {manual.id}</h2>
+            <h2>Manual name: {manual.name}</h2>
         </div>
     )
 
