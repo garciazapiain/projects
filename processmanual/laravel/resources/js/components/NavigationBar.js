@@ -7,6 +7,39 @@ import { HashLink as Link } from 'react-router-hash-link';
 const NavigationBar = props => {
     const [collapsed, setCollapsed] = useState(true);
     const toggleNavbar = () => setCollapsed(!collapsed);
+    console.log(props.user.userinfo.name);
+
+    const handleLogout = () => {
+      console.log('logout');
+      async function logout() {
+          const token = window.localStorage.getItem('token');
+          const response = await fetch('http://www.processmanual.test:8080/api/logout' , {
+              method: 'GET',
+              headers: {
+                'Accept': 'application/json',
+                'Authorization': 'Bearer ' + token,
+                'X-Requested-With': 'XMLHttpRequest',
+                'Content-Type': 'application/json'
+              }
+          });
+          const data = await response.json();
+          window.localStorage.removeItem('token');
+          window.localStorage.removeItem('user');
+          setUser({
+              loggedIn: false,
+              token: '',
+              userinfo: {
+                name:'',
+                email:'',
+                password:''
+              }
+          })
+          console.log('logged out');
+          window.location = '/';
+      }
+
+      logout();
+  }
     
     return (
        <>
@@ -18,6 +51,10 @@ const NavigationBar = props => {
                 <Link to='/#aboutHomePage'><div>About</div></Link>
                 <Link to='/#contactHomePage'><div>Contact</div></Link>
                 <Link to='/'><div>Profile</div></Link>
+                <NavItem>
+                  <Button onClick={handleLogout}>Logout</Button>
+                </NavItem>
+                <h5>Hello {props.user.userinfo.name}</h5>
             </div>
         </div>
         <div className="navMobile">

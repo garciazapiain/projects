@@ -9,12 +9,17 @@ class Manual extends Model
     //
     //
     protected $fillable = [
-        'name'
+        'name', 'user_id'
     ];
 
     public function processes()
     {
         return $this->hasMany('App\Process');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo('App\User');
     }
 
 }

@@ -8,6 +8,9 @@ import AddManual from './AddManual.js';
 import ViewManual from './ViewManual.js'
 import EditManual from './EditManual';
 import Footer from './Footer.js'
+import LoginNav from './LoginNav.js'
+import Login from './Login.js'
+import Register from './Register.js'
 
 const NotFound = () => {
   return <h1>Not Found</h1>
@@ -15,16 +18,52 @@ const NotFound = () => {
 
 const Routes = props => {
   const [ manual, setManual ] = useState([]); 
+  const [ user, setUser ] = useState({
+    loggedIn: false,
+    token: '',
+    userinfo: {
+      name : '',
+      email: '',
+      password: ''
+    }
+});
+
+useEffect(() => {
+  const token = window.localStorage.getItem('token');
+  const userinfo = JSON.parse(window.localStorage.getItem('user'));
+  if (token && userinfo) {
+      setUser({
+          loggedIn: true,
+          token: token,
+          userinfo: userinfo
+      })
+  }
+}, []);
+
+if (user.loggedIn && user.token) {
+  console.log(user);
+  console.log(user.token);
   return(
       <HashRouter history={history}>
-        <NavigationBar />
+        <NavigationBar 
+        user={user}
+        setUser={setUser}
+        />
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/manual/new' component={AddManual} />
+          <Route path='/manual/new' 
+            render = {()=>    
+              <AddManual
+                user = {user}
+                setUser={setUser} 
+                />                           
+              }/>
           <Route path='/manual/mymanuals' 
             render = {()=>    
               <MyManuals
                 setManual={setManual}
+                user = {user}
+                setUser={setUser} 
                 />                           
               }/>
             <Route path={`/manual/edit/${manual.id}`} 
@@ -44,6 +83,38 @@ const Routes = props => {
         <Footer/>
       </HashRouter>
   )
-};
+          }
+          return (
+            <>
+               <HashRouter>
+                    <div style={{width:'100vw', height: '100vh'}}>
+                        <LoginNav />
+                        <Switch>
+                            <Route
+                                exact={true} 
+                                path='/'
+                                render = {()=>    
+                                    <Login 
+                                        user={user}
+                                        setUser={setUser}
+                                    />
+                                }
+                            />  
+                            <Route
+                                exact={true} 
+                                path='/register'
+                                render = {()=>    
+                                    <Register 
+                                        user={user}
+                                        setUser={setUser}
+                                    />
+                                }
+                            />  
+                        </Switch>
+                    </div>
+               </HashRouter>
+            </>
+        )
+                              }
 
 export default Routes;

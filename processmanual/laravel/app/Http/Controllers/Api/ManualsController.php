@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Manual;
+use App\User;
 
 class ManualsController extends Controller
 {
@@ -15,9 +16,16 @@ class ManualsController extends Controller
      */
     public function index()
     {
-        $manual = Manual::get();
-
-        return $manual;
+        // $userId = AuthController::user()->id;
+        // $data['data'] = DB::table('manuals')->where('user_id', $userId)->get();
+        // return $data;
+        // $manual = Manual::get()->where->('user_id'==$userId);
+        // $user = DB::table('manuals')->where('user_id', $userId)->first();
+        // $manual = \DB::table('manuals')->where('user_id', auth()->user()->id);
+        $manual = \DB::table('manuals')->where('user_id', auth()->user()->id)->get();
+        return response()->json($manual);
+        // return $manual;
+        // return Manual::get();
     }
 
     /**
@@ -43,6 +51,7 @@ class ManualsController extends Controller
         ]);
             $manual = new Manual;
             $manual->name = $request->input('name');
+            $manual->user_id = auth()->user()->id;
             $manual->save();
             
             return redirect('/manual/mymanuals')->with('success', 'Post Created');
@@ -56,7 +65,8 @@ class ManualsController extends Controller
      */
     public function show($id)
     {
-        return Manual::find($id);
+        $manual = Manual::find($id);
+        return $manual;
     }
 
     /**

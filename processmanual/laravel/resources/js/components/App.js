@@ -13,6 +13,6 @@ export default class App extends React.Component {
     }
 }
 
-if (document.getElementById('app')) {
-    ReactDOM.render(<App />, document.getElementById('app'));
+if (document.getElementById('index')) {
+    ReactDOM.render(<App />, document.getElementById('index'));
 }

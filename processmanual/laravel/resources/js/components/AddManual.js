@@ -5,6 +5,8 @@ import EditManual from './EditManual.js'
 const AddManual = props => {
     const [formInputValues, setFormInputValues] = useState({name:'manual'});
     const [process, setProcess] = useState({})
+    console.log(props);
+
 
     const handleInputChange = e => {
         setFormInputValues({
@@ -23,8 +25,8 @@ const AddManual = props => {
             // credentials: 'include',
             headers: {
                 'Accept': 'application/json',
-                // 'Authorization': 'Bearer ' + token,
-                // 'X-Requested-With': 'XMLHttpRequest',
+                'Authorization': 'Bearer ' + props.user.token,
+                'X-Requested-With': 'XMLHttpRequest',
                 'Content-Type': 'application/json'
             },
             responseType: 'json',

@@ -11,7 +11,12 @@
 |
 */
 
-Route::view('/{path?}', 'app');
+
+// Auth::routes();
+
+// Route::view('/', 'home');
+Route::view('/{path?}', 'index');
+
 
 
 // Route::get('/', 'PagesController@index');

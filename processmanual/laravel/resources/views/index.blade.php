@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="css/app.css">
     <title>{{config("app.name", "Quantic Food")}}</title>
 </head>
-<body>
-    
-    <div id="app"></div>
+<body> 
+    <div id="index"></div>
     <script src="{{ asset('js/app.js')}}"></script>
 </body>
 </html>

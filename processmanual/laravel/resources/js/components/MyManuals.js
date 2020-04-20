@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 
 const MyManuals = (props) => {
-    const [manuals, setManuals] = useState();
+    const [manuals, setManuals] = useState([]);
     const [deletes, setDeletes] = useState(false);
+    console.log(props);
     
     function editManual (manual) {
         props.setManual(manual);
@@ -19,8 +20,8 @@ const MyManuals = (props) => {
                 method: 'DELETE',
                 headers: {
                     'Accept': 'application/json',
-                    // 'Authorization': 'Bearer ' + token,
-                    // 'X-Requested-With': 'XMLHttpRequest',
+                    'Authorization': 'Bearer ' + props.user.token,
+                    'X-Requested-With': 'XMLHttpRequest',
                     'Content-Type': 'application/json'
                 },
             })  
@@ -34,8 +35,8 @@ const MyManuals = (props) => {
                 method: 'GET',
                 headers: {
                     'Accept': 'application/json',
-                    // 'Authorization': 'Bearer ' + token,
-                    // 'X-Requested-With': 'XMLHttpRequest',
+                    'Authorization': 'Bearer ' + props.user.token,
+                    'X-Requested-With': 'XMLHttpRequest',
                     'Content-Type': 'application/json'
                 },
                 })
@@ -46,6 +47,7 @@ const MyManuals = (props) => {
             },[deletes]);
 
     if (manuals){
+        console.log(manuals)
         return (
                 <>
                 <h1 style={{paddingTop:'56px'}}>My Manuals:</h1>
