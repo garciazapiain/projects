@@ -75,7 +75,7 @@ const Login = props => {
 
     return (
         <div className="login">
-            <h1 style={{fontSize: '4rem', marginBottom: '2rem'}}>Process Manual</h1>
+            <h1>Process Manual</h1>
             <div className="login-form">
                 <h2 style={{fontSize: '2rem'}}>Login</h2>
                 <h4 style={alert.style}>{ alert.message }</h4>
@@ -95,9 +95,8 @@ const Login = props => {
                     <input type="submit" value="Log in" />
                 </form>
                 <div style={{marginTop: '1rem'}}>
-                    Not a registered user? <br/>
                     <Link to="/register" style={{color:'black'}}>
-                        Click here!
+                        Click here to register
                     </Link>
                 </div>
             </div>

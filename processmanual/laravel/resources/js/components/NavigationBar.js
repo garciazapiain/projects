@@ -7,7 +7,6 @@ import { HashLink as Link } from 'react-router-hash-link';
 const NavigationBar = props => {
     const [collapsed, setCollapsed] = useState(true);
     const toggleNavbar = () => setCollapsed(!collapsed);
-    console.log(props.user.userinfo.name);
 
     const handleLogout = () => {
       console.log('logout');
@@ -25,15 +24,6 @@ const NavigationBar = props => {
           const data = await response.json();
           window.localStorage.removeItem('token');
           window.localStorage.removeItem('user');
-          setUser({
-              loggedIn: false,
-              token: '',
-              userinfo: {
-                name:'',
-                email:'',
-                password:''
-              }
-          })
           console.log('logged out');
           window.location = '/';
       }
@@ -54,7 +44,7 @@ const NavigationBar = props => {
                 <NavItem>
                   <Button onClick={handleLogout}>Logout</Button>
                 </NavItem>
-                <h5>Hello {props.user.userinfo.name}</h5>
+                <h5>Hello {props.user.user.name}</h5>
             </div>
         </div>
         <div className="navMobile">

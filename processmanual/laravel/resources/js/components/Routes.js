@@ -12,16 +12,17 @@ import LoginNav from './LoginNav.js'
 import Login from './Login.js'
 import Register from './Register.js'
 
+
 const NotFound = () => {
   return <h1>Not Found</h1>
-}
+} 
 
 const Routes = props => {
   const [ manual, setManual ] = useState([]); 
   const [ user, setUser ] = useState({
     loggedIn: false,
     token: '',
-    userinfo: {
+    user: {
       name : '',
       email: '',
       password: ''
@@ -30,19 +31,19 @@ const Routes = props => {
 
 useEffect(() => {
   const token = window.localStorage.getItem('token');
-  const userinfo = JSON.parse(window.localStorage.getItem('user'));
-  if (token && userinfo) {
+  const user = JSON.parse(window.localStorage.getItem('user'));
+  if (token && user) {
       setUser({
           loggedIn: true,
           token: token,
-          userinfo: userinfo
+          user: user
       })
   }
 }, []);
 
 if (user.loggedIn && user.token) {
   console.log(user);
-  console.log(user.token);
+  console.log("this is user token" + user.token);
   return(
       <HashRouter history={history}>
         <NavigationBar 

@@ -6969,7 +6969,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "a {\n  color: white;\n}\n\n@media only screen and (max-width: 500px) {\n  .navPC {\n    display: none;\n  }\n}\n@media only screen and (min-width: 500px) {\n  .navPC {\n    background-color: #045658;\n    color: white;\n    width: 100vw;\n    height: 56px;\n    display: -webkit-box;\n    display: flex;\n    top: 0;\n    position: fixed;\n  }\n  .navPC .logoPC {\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-align: center;\n            align-items: center;\n  }\n}\n\n.navMobile {\n  background-color: #045658;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n          align-items: center;\n  top: 0;\n  position: fixed;\n  width: 100vw;\n}\n@media only screen and (min-width: 500px) {\n  .navMobile {\n    display: none;\n  }\n}\n.navMobile .logoMobile {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n.navMobileItems {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  text-align: right;\n  -webkit-box-pack: right;\n          justify-content: right;\n}\n\n.navbar-toggler {\n  margin: 0 auto;\n}\n\n.navButton {\n  padding: 0 20px 0 20px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  -webkit-box-align: center;\n          align-items: center;\n  width: 100vw;\n}\n\n.footer {\n  display: -webkit-box;\n  display: flex;\n  background-color: #fdac07;\n  width: 100vw;\n  margin: auto;\n}\n\n.manualsHomePage {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  padding-top: 56px;\n}\n.manualsHomePage .manualsHomePage1 {\n  background-color: #47802b;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .manualsHomePage2 {\n  background-color: #ef6101;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .addManualExpand {\n  background-color: #47802b;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n.manualsHomePage .myManualExpand {\n  background-color: #ef6101;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n\n.aboutHomePage {\n  background-color: #03161d;\n  color: white;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  padding-top: 56px;\n}\n\n.contactHomePage {\n  background-color: #47802b;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  margin-bottom: 0;\n  padding-top: 56px;\n}\n\n.myManuals-each {\n  display: -webkit-box;\n  display: flex;\n  margin: 1em;\n  justify-content: space-around;\n}\n\n.myManuals-each-child {\n  width: 24px;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.myManuals-each-child-name {\n  width: 47px;\n}\n\n.myManuals-each-child-id {\n  width: 1px;\n}\n\nbutton {\n  display: inline-block;\n  font-weight: 300;\n  color: #212529;\n  text-align: center;\n  vertical-align: middle;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-color: #ef6101;\n  border: 1px solid transparent;\n  padding: 0.175rem 0.5rem;\n  font-size: 1rem;\n  line-height: 1.5;\n  border-radius: 0.25rem;\n  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n}\n\n.button-edit {\n  background-color: #ef6101;\n  color: white;\n}\n\n.button-view {\n  background-color: #079a9c;\n  color: white;\n}\n\n.button-delete {\n  background-color: red;\n  color: white;\n}\n\n.button-create {\n  margin: 2em;\n}", ""]);
+exports.push([module.i, "a {\n  color: white;\n}\n\n@media only screen and (max-width: 500px) {\n  .navPC {\n    display: none;\n  }\n}\n@media only screen and (min-width: 500px) {\n  .navPC {\n    background-color: #045658;\n    color: white;\n    width: 100vw;\n    height: 56px;\n    display: -webkit-box;\n    display: flex;\n    top: 0;\n    position: fixed;\n  }\n  .navPC .logoPC {\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-align: center;\n            align-items: center;\n  }\n}\n\n.navMobile {\n  background-color: #045658;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n          align-items: center;\n  top: 0;\n  position: fixed;\n  width: 100vw;\n}\n@media only screen and (min-width: 500px) {\n  .navMobile {\n    display: none;\n  }\n}\n.navMobile .logoMobile {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n.navMobileItems {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  text-align: right;\n  -webkit-box-pack: right;\n          justify-content: right;\n}\n\n.navbar-toggler {\n  margin: 0 auto;\n}\n\n.navButton {\n  padding: 0 20px 0 20px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  -webkit-box-align: center;\n          align-items: center;\n  width: 100vw;\n}\n\n.footer {\n  display: -webkit-box;\n  display: flex;\n  background-color: #fdac07;\n  width: 100vw;\n  margin: auto;\n}\n\n.login {\n  padding-top: 56px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n}\n.login h1 {\n  font-size: 100px;\n  font-family: Arial, Helvetica, sans-serif;\n}\n\n.login-form {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  -webkit-box-align: center;\n          align-items: center;\n  text-align: center;\n}\n\n.manualsHomePage {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  padding-top: 56px;\n}\n.manualsHomePage .manualsHomePage1 {\n  background-color: #47802b;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .manualsHomePage2 {\n  background-color: #ef6101;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .addManualExpand {\n  background-color: #47802b;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n.manualsHomePage .myManualExpand {\n  background-color: #ef6101;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n\n.aboutHomePage {\n  background-color: #03161d;\n  color: white;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  padding-top: 56px;\n}\n\n.contactHomePage {\n  background-color: #47802b;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  margin-bottom: 0;\n  padding-top: 56px;\n}\n\n.myManuals-each {\n  display: -webkit-box;\n  display: flex;\n  margin: 1em;\n  justify-content: space-around;\n}\n\n.myManuals-each-child {\n  width: 24px;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.myManuals-each-child-name {\n  width: 47px;\n}\n\n.myManuals-each-child-id {\n  width: 1px;\n}\n\nbutton {\n  display: inline-block;\n  font-weight: 300;\n  color: #212529;\n  text-align: center;\n  vertical-align: middle;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-color: #ef6101;\n  border: 1px solid transparent;\n  padding: 0.175rem 0.5rem;\n  font-size: 1rem;\n  line-height: 1.5;\n  border-radius: 0.25rem;\n  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n}\n\n.button-edit {\n  background-color: #ef6101;\n  color: white;\n}\n\n.button-view {\n  background-color: #079a9c;\n  color: white;\n}\n\n.button-delete {\n  background-color: red;\n  color: white;\n}\n\n.button-create {\n  margin: 2em;\n}", ""]);
 
 // exports
 
@@ -84879,6 +84879,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 var Home = function Home() {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
       _useState2 = _slicedToArray(_useState, 2),
@@ -85073,12 +85074,7 @@ var Login = function Login(props) {
 
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "login"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
-    style: {
-      fontSize: '4rem',
-      marginBottom: '2rem'
-    }
-  }, "Process Manual"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "Process Manual"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "login-form"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
     style: {
@@ -85115,12 +85111,12 @@ var Login = function Login(props) {
     style: {
       marginTop: '1rem'
     }
-  }, "Not a registered user? ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     to: "/register",
     style: {
       color: 'black'
     }
-  }, "Click here!"))));
+  }, "Click here to register"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Login);
@@ -85146,9 +85142,12 @@ __webpack_require__.r(__webpack_exports__);
 
 var LoginNav = function LoginNav(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    style: {
-      backgroundColor: 'black'
-    },
+    className: "navPC"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "logoPC"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "images/logo.png"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "navButton"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     to: "/",
@@ -85156,7 +85155,7 @@ var LoginNav = function LoginNav(props) {
   }, "Login"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     to: "/register",
     className: "navLink"
-  }, "Register"));
+  }, "Register")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LoginNav);
@@ -85387,8 +85386,6 @@ var NavigationBar = function NavigationBar(props) {
     return setCollapsed(!collapsed);
   };
 
-  console.log(props.user.userinfo.name);
-
   var handleLogout = function handleLogout() {
     console.log('logout');
 
@@ -85426,19 +85423,10 @@ var NavigationBar = function NavigationBar(props) {
                 data = _context.sent;
                 window.localStorage.removeItem('token');
                 window.localStorage.removeItem('user');
-                setUser({
-                  loggedIn: false,
-                  token: '',
-                  userinfo: {
-                    name: '',
-                    email: '',
-                    password: ''
-                  }
-                });
                 console.log('logged out');
                 window.location = '/';
 
-              case 12:
+              case 11:
               case "end":
                 return _context.stop();
             }
@@ -85473,7 +85461,7 @@ var NavigationBar = function NavigationBar(props) {
     to: "/"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "Profile")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
     onClick: handleLogout
-  }, "Logout")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", null, "Hello ", props.user.userinfo.name))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, "Logout")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", null, "Hello ", props.user.user.name))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "navMobile"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "logoMobile"
@@ -85532,6 +85520,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "./node_modules/reactstrap/es/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -85551,6 +85540,9 @@ function _nonIterableRest() { throw new TypeError("Invalid attempt to destructur
 function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
 
 
 
@@ -85579,9 +85571,20 @@ var Register = function Register(props) {
       formInputValues = _useState4[0],
       setFormInputValues = _useState4[1];
 
+  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["useHistory"])();
+
   var handleNameInputChange = function handleNameInputChange(e) {
+    // console.log(e.target + 'this is e target');
+    // console.log(e.target.id + 'this is e target id');
+    // console.log(e.target.value + 'this is e target value');
     setFormInputValues(_objectSpread({}, formInputValues, _defineProperty({}, e.target.id, e.target.value)));
-    console.log(user);
+    props.setUser({
+      user: {
+        name: formInputValues.name,
+        email: formInputValues.email,
+        password: formInputValues.password
+      }
+    });
   };
 
   function postRegister() {
@@ -85622,16 +85625,22 @@ var Register = function Register(props) {
 
             case 5:
               data = _context.sent;
-              console.log(data);
 
               if (data.error) {
                 setAlert();
               } else if (data.token) {
+                console.log(data);
                 props.setUser({
                   loggedIn: true,
                   token: data.token,
-                  userinfo: data.userinfo
+                  user: {
+                    name: formInputValues.name,
+                    email: formInputValues.email,
+                    password: formInputValues.password
+                  }
                 });
+                console.log('registered succesfully');
+                history.push('/');
                 setAlert({
                   message: 'You\'ve been logged in successfully',
                   style: {
@@ -85639,9 +85648,10 @@ var Register = function Register(props) {
                   }
                 });
                 window.localStorage.setItem('token', data.token);
+                window.localStorage.setItem('user', JSON.stringify(user.user));
               }
 
-            case 8:
+            case 7:
             case "end":
               return _context.stop();
           }
@@ -85662,7 +85672,7 @@ var Register = function Register(props) {
   };
 
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    user ? user.token ? location.replace('/') : null : null;
+    user.token ? console.log('hey') : null;
   }, [user]);
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
     style: {
@@ -85700,7 +85710,13 @@ var Register = function Register(props) {
       border: '1px solid blue',
       margin: '5px'
     }
-  }, "Submit"));
+  }, "Submit"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+    to: "/",
+    onClick: handleSubmitButtonClick,
+    style: {
+      color: 'black'
+    }
+  }, "Click here!"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Register);
@@ -85765,7 +85781,7 @@ var Routes = function Routes(props) {
   var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
     loggedIn: false,
     token: '',
-    userinfo: {
+    user: {
       name: '',
       email: '',
       password: ''
@@ -85777,20 +85793,20 @@ var Routes = function Routes(props) {
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     var token = window.localStorage.getItem('token');
-    var userinfo = JSON.parse(window.localStorage.getItem('user'));
+    var user = JSON.parse(window.localStorage.getItem('user'));
 
-    if (token && userinfo) {
+    if (token && user) {
       setUser({
         loggedIn: true,
         token: token,
-        userinfo: userinfo
+        user: user
       });
     }
   }, []);
 
   if (user.loggedIn && user.token) {
     console.log(user);
-    console.log(user.token);
+    console.log("this is user token" + user.token);
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["HashRouter"], {
       history: _history_js__WEBPACK_IMPORTED_MODULE_2__["default"]
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavigationBar_js__WEBPACK_IMPORTED_MODULE_4__["default"], {

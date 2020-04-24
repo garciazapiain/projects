@@ -1,18 +1,33 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios";
 import { Row, Col, Card, Button, CardTitle, CardText } from 'reactstrap';
+import {HashRouter, Route, Switch, Redirect} from "react-router-dom";
+import { Link } from 'react-router-dom'
+import { useHistory } from "react-router-dom";
+
+
 
 const Register = props => {
     const { user } = props;
     const [alert, setAlert] = useState({})
     const formStyle = { borderRadius: '10px', margin: '.3rem', width:'286px' }
     const [formInputValues, setFormInputValues] = useState({name: '', email: '', password: ''});
+    let history = useHistory();
     const handleNameInputChange = e => {
+        // console.log(e.target + 'this is e target');
+        // console.log(e.target.id + 'this is e target id');
+        // console.log(e.target.value + 'this is e target value');
         setFormInputValues({
             ...formInputValues,
             [e.target.id]: e.target.value
         })
-        console.log(user);
+        props.setUser({
+            user: {
+                name : formInputValues.name,
+                email: formInputValues.email,
+                password: formInputValues.password
+              }
+        })
     };
 
     async function postRegister() {
@@ -34,21 +49,27 @@ const Register = props => {
         })
         const data = await response.json();
 
-        console.log(data);
-
         if (data.error) {
             setAlert();
         } else if (data.token) {
+            console.log(data);
             props.setUser({
                 loggedIn: true,
                 token: data.token,
-                userinfo: data.userinfo
+                user: {
+                    name : formInputValues.name,
+                    email: formInputValues.email,
+                    password: formInputValues.password,
+                  }
             })
+            console.log('registered succesfully')
+            history.push('/')
             setAlert({
                 message: 'You\'ve been logged in successfully',
                 style: {color: 'green'}
             })
             window.localStorage.setItem('token', data.token);
+            window.localStorage.setItem('user', JSON.stringify(user.user))
         }
     }
 
@@ -62,7 +83,7 @@ const Register = props => {
     } 
 
     useEffect(() => {
-        user ? ( user.token ? location.replace('/') : null ) : null;
+       ( user.token ? console.log('hey') : null );
     }, [user])
 
     return (
@@ -96,7 +117,10 @@ const Register = props => {
             style={formStyle}
            />
            <br/>
-           <button onClick = {handleSubmitButtonClick} style={{border: '1px solid blue', margin:'5px'}}>Submit</button>
+            <button onClick = {handleSubmitButtonClick} style={{border: '1px solid blue', margin:'5px'}}>Submit</button>
+            <Link to="/" onClick = {handleSubmitButtonClick}  style={{color:'black'}}>
+                        Click here!
+            </Link>
        </form>
     )
 
