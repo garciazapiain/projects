@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 const LoginNav = props => {
     return (
-    <div className='navPC'>
+    <div className='navLogin'>
         <div className="logoPC"><img src="images/logo.png"/></div>
         <div className='navButton'>
         <Link to="/" className="navLink">Login</Link>

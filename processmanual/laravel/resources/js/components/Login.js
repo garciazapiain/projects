@@ -92,7 +92,7 @@ const Login = props => {
                         onChange={ handleFormChange }
                         style={{marginBottom: '1rem'}}
                     /><br />
-                    <input type="submit" value="Log in" />
+                    <input type="submit" value="Log in" style={{border: '1px solid blue', margin:'5px', backgroundColor:'#ef6101'}} />
                 </form>
                 <div style={{marginTop: '1rem'}}>
                     <Link to="/register" style={{color:'black'}}>

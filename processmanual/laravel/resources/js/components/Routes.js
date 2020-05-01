@@ -11,6 +11,7 @@ import Footer from './Footer.js'
 import LoginNav from './LoginNav.js'
 import Login from './Login.js'
 import Register from './Register.js'
+import Profile from './Profile.js'
 
 
 const NotFound = () => {
@@ -52,6 +53,13 @@ if (user.loggedIn && user.token) {
         />
         <Switch>
           <Route path='/' exact component={Home} />
+          <Route path='/profile' 
+            render = {()=>    
+              <Profile
+                user = {user}
+                setUser={setUser} 
+                />                           
+              }/>
           <Route path='/manual/new' 
             render = {()=>    
               <AddManual

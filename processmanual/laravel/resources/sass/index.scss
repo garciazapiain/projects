@@ -3,6 +3,20 @@ a {
 }
 
 //Navigation
+.navLogin {
+    background-color: #045658;
+    color:white;
+    width: 100vw;
+    height:56px;
+    display:flex;
+    top: 0;
+    position: fixed;
+    .logoPC{
+        display: flex;
+        align-items: center;
+    }
+}
+
 .navPC {
     @media only screen and (max-width:500px){
         display: none;
@@ -76,6 +90,10 @@ a {
     h1 {
         font-size: 100px;
         font-family: Arial, Helvetica, sans-serif;
+        @media only screen and (max-width:715px){
+            font-size: 60px;
+            text-align: center;
+        }
     }
 }
 
@@ -86,6 +104,28 @@ a {
     text-align: center;
 }
 
+//Register Page:
+.register {
+    padding-top: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        font-size: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        @media only screen and (max-width:715px){
+            font-size: 60px;
+            text-align: center;
+        }
+    }
+}
+
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 //Home Page:
 .manualsHomePage { 
     display:flex;
@@ -189,4 +229,56 @@ button {
 
 .button-create {
     margin: 2em;
+}
+
+//Add Manual
+
+.addManualContainer {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+}
+
+.addManualColumn1{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    justify-content: space-between;
+}
+.addManualColumn2{
+    display: flex;
+    width: 50vw;
+}
+
+.inputContainer{
+    display: flex;
+    border-color: black;
+    border-style: solid;
+    border-bottom: none;
+    height: 20vh;
+}
+
+.addProcessContainer{
+    display: flex;
+    border-color: black;
+    border-style: solid;
+    height: 80vh;
+}
+
+//Markdown
+.markdownPreviewContainer{
+    display: flex;
+    border-color: black;
+    border-style: solid;
+    border-left: none;
+    height: 80vh;
+    width:50vw;
+}
+
+.markdownFirstPage{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width:50vw;
+    justify-content: center;
 }

@@ -40,7 +40,7 @@ const NavigationBar = props => {
                 <Link to='/manual/new'><div>Add Manual</div></Link>
                 <Link to='/#aboutHomePage'><div>About</div></Link>
                 <Link to='/#contactHomePage'><div>Contact</div></Link>
-                <Link to='/'><div>Profile</div></Link>
+                <Link to='/profile'><div>Profile</div></Link>
                 <NavItem>
                   <Button onClick={handleLogout}>Logout</Button>
                 </NavItem>

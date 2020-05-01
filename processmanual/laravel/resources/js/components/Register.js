@@ -87,41 +87,41 @@ const Register = props => {
     }, [user])
 
     return (
-        <form style={{ display:'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center', padding: '1rem', paddingTop: '2rem'}}>
-           <h2>Register</h2>
-            <h4>{ alert.error }</h4>
-           <input
-            id="name"
-            type="text"
-            placeholder = "name"
-            value = {formInputValues.name}
-            onChange = {handleNameInputChange}
-            style={formStyle}
-           />
-           <br/>
-           <input
-            id="email"
-            type="text"
-            placeholder = "E-mail"
-            value={formInputValues.email}
-            onChange = {handleNameInputChange}
-            style={formStyle}
-           />
-           <br/>
-           <input
-            id="password"
-            type="password"
-            placeholder = "Password"
-            value={formInputValues.password}
-            onChange = {handleNameInputChange}
-            style={formStyle}
-           />
-           <br/>
-            <button onClick = {handleSubmitButtonClick} style={{border: '1px solid blue', margin:'5px'}}>Submit</button>
-            <Link to="/" onClick = {handleSubmitButtonClick}  style={{color:'black'}}>
-                        Click here!
-            </Link>
-       </form>
+        <div className="register">
+            <h1>Process Manual</h1>
+            <form className="registerForm">
+                <h2>Register</h2>
+                    <h4>{ alert.error }</h4>
+                <input
+                    id="name"
+                    type="text"
+                    placeholder = "Name"
+                    value = {formInputValues.name}
+                    onChange = {handleNameInputChange}
+                    style={formStyle}
+                />
+                <br/>
+                <input
+                    id="email"
+                    type="text"
+                    placeholder = "Email"
+                    value={formInputValues.email}
+                    onChange = {handleNameInputChange}
+                    style={formStyle}
+                />
+                <br/>
+                <input
+                    id="password"
+                    type="password"
+                    placeholder = "Password"
+                    value={formInputValues.password}
+                    onChange = {handleNameInputChange}
+                    style={formStyle}
+                />
+                <br/>
+                    <button onClick = {handleSubmitButtonClick} style={{border: '1px solid blue', margin:'5px'}}>Submit</button>
+            </form>
+        </div>
     )
 
 }

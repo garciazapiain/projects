@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import AddProcess from './AddProcess.js'
+import MarkdownPreview from './MarkdownPreview.js'
 import EditManual from './EditManual.js'
 
 const AddManual = props => {
@@ -50,20 +51,39 @@ const AddManual = props => {
 
     return(
         <div style={{display:'flex', flexDirection:"column" }}>
-            <h1>Add Manual</h1>
-            <form method="post">
-                <div>
-                <h3>Name of Manual</h3>
-                <input
-                    id="name"
-                    type="text"
-                    placeholder = "Name of process"
-                    value = {formInputValues.name}
-                    onChange = {handleInputChange}
-                />
+            <h1 style={{paddingTop:'56px'}}>Add Manual:</h1>
+            <div className="addManualContainer">
+                <div className="addManualColumn1">
+                    {/* First Component */}
+                    <div className="inputContainer">
+                        <form method="post">
+                            <div>
+                            <h3>Name of Manual</h3>
+                            <input
+                                id="name"
+                                type="text"
+                                placeholder = "Name of process"
+                                value = {formInputValues.name}
+                                onChange = {handleInputChange}
+                            />
+                            </div>
+                        </form>
+                    </div>
+                    {/* Second Component */}
+                    <div className="addProcessContainer">
+                        <AddProcess/>
+                    </div>
+                    <button onClick={handleSubmitButtonClick}>Save manual</button>
                 </div>
-                <button onClick={handleSubmitButtonClick}>Save manual</button>
-            </form>
+                <div className="addManualColumn2">
+                    {/* Third Component */}
+                    <div className="markdownPreviewContainer">
+                        <MarkdownPreview
+                            name={formInputValues.name}
+                        />
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

@@ -53,7 +53,7 @@ const AddProcess = props => {
 
     return(
         <div style={{display:'flex', flexDirection:"column" }}>
-            <h1>Add Process</h1>
+            <h2>Add Process</h2>
             <form method="post">
                 <div>
                 <h3>Name of process</h3>

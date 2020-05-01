@@ -6969,7 +6969,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "a {\n  color: white;\n}\n\n@media only screen and (max-width: 500px) {\n  .navPC {\n    display: none;\n  }\n}\n@media only screen and (min-width: 500px) {\n  .navPC {\n    background-color: #045658;\n    color: white;\n    width: 100vw;\n    height: 56px;\n    display: -webkit-box;\n    display: flex;\n    top: 0;\n    position: fixed;\n  }\n  .navPC .logoPC {\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-align: center;\n            align-items: center;\n  }\n}\n\n.navMobile {\n  background-color: #045658;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n          align-items: center;\n  top: 0;\n  position: fixed;\n  width: 100vw;\n}\n@media only screen and (min-width: 500px) {\n  .navMobile {\n    display: none;\n  }\n}\n.navMobile .logoMobile {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n.navMobileItems {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  text-align: right;\n  -webkit-box-pack: right;\n          justify-content: right;\n}\n\n.navbar-toggler {\n  margin: 0 auto;\n}\n\n.navButton {\n  padding: 0 20px 0 20px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  -webkit-box-align: center;\n          align-items: center;\n  width: 100vw;\n}\n\n.footer {\n  display: -webkit-box;\n  display: flex;\n  background-color: #fdac07;\n  width: 100vw;\n  margin: auto;\n}\n\n.login {\n  padding-top: 56px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n}\n.login h1 {\n  font-size: 100px;\n  font-family: Arial, Helvetica, sans-serif;\n}\n\n.login-form {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  -webkit-box-align: center;\n          align-items: center;\n  text-align: center;\n}\n\n.manualsHomePage {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  padding-top: 56px;\n}\n.manualsHomePage .manualsHomePage1 {\n  background-color: #47802b;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .manualsHomePage2 {\n  background-color: #ef6101;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .addManualExpand {\n  background-color: #47802b;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n.manualsHomePage .myManualExpand {\n  background-color: #ef6101;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n\n.aboutHomePage {\n  background-color: #03161d;\n  color: white;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  padding-top: 56px;\n}\n\n.contactHomePage {\n  background-color: #47802b;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  margin-bottom: 0;\n  padding-top: 56px;\n}\n\n.myManuals-each {\n  display: -webkit-box;\n  display: flex;\n  margin: 1em;\n  justify-content: space-around;\n}\n\n.myManuals-each-child {\n  width: 24px;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.myManuals-each-child-name {\n  width: 47px;\n}\n\n.myManuals-each-child-id {\n  width: 1px;\n}\n\nbutton {\n  display: inline-block;\n  font-weight: 300;\n  color: #212529;\n  text-align: center;\n  vertical-align: middle;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-color: #ef6101;\n  border: 1px solid transparent;\n  padding: 0.175rem 0.5rem;\n  font-size: 1rem;\n  line-height: 1.5;\n  border-radius: 0.25rem;\n  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n}\n\n.button-edit {\n  background-color: #ef6101;\n  color: white;\n}\n\n.button-view {\n  background-color: #079a9c;\n  color: white;\n}\n\n.button-delete {\n  background-color: red;\n  color: white;\n}\n\n.button-create {\n  margin: 2em;\n}", ""]);
+exports.push([module.i, "a {\n  color: white;\n}\n\n.navLogin {\n  background-color: #045658;\n  color: white;\n  width: 100vw;\n  height: 56px;\n  display: -webkit-box;\n  display: flex;\n  top: 0;\n  position: fixed;\n}\n.navLogin .logoPC {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n@media only screen and (max-width: 500px) {\n  .navPC {\n    display: none;\n  }\n}\n@media only screen and (min-width: 500px) {\n  .navPC {\n    background-color: #045658;\n    color: white;\n    width: 100vw;\n    height: 56px;\n    display: -webkit-box;\n    display: flex;\n    top: 0;\n    position: fixed;\n  }\n  .navPC .logoPC {\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-align: center;\n            align-items: center;\n  }\n}\n\n.navMobile {\n  background-color: #045658;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n          align-items: center;\n  top: 0;\n  position: fixed;\n  width: 100vw;\n}\n@media only screen and (min-width: 500px) {\n  .navMobile {\n    display: none;\n  }\n}\n.navMobile .logoMobile {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n.navMobileItems {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  text-align: right;\n  -webkit-box-pack: right;\n          justify-content: right;\n}\n\n.navbar-toggler {\n  margin: 0 auto;\n}\n\n.navButton {\n  padding: 0 20px 0 20px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  -webkit-box-align: center;\n          align-items: center;\n  width: 100vw;\n}\n\n.footer {\n  display: -webkit-box;\n  display: flex;\n  background-color: #fdac07;\n  width: 100vw;\n  margin: auto;\n}\n\n.login {\n  padding-top: 56px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n}\n.login h1 {\n  font-size: 100px;\n  font-family: Arial, Helvetica, sans-serif;\n}\n@media only screen and (max-width: 715px) {\n  .login h1 {\n    font-size: 60px;\n    text-align: center;\n  }\n}\n\n.login-form {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  -webkit-box-align: center;\n          align-items: center;\n  text-align: center;\n}\n\n.register {\n  padding-top: 56px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.register h1 {\n  font-size: 100px;\n  font-family: Arial, Helvetica, sans-serif;\n}\n@media only screen and (max-width: 715px) {\n  .register h1 {\n    font-size: 60px;\n    text-align: center;\n  }\n}\n\n.registerForm {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.manualsHomePage {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  padding-top: 56px;\n}\n.manualsHomePage .manualsHomePage1 {\n  background-color: #47802b;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .manualsHomePage2 {\n  background-color: #ef6101;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .addManualExpand {\n  background-color: #47802b;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n.manualsHomePage .myManualExpand {\n  background-color: #ef6101;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n\n.aboutHomePage {\n  background-color: #03161d;\n  color: white;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  padding-top: 56px;\n}\n\n.contactHomePage {\n  background-color: #47802b;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  margin-bottom: 0;\n  padding-top: 56px;\n}\n\n.myManuals-each {\n  display: -webkit-box;\n  display: flex;\n  margin: 1em;\n  justify-content: space-around;\n}\n\n.myManuals-each-child {\n  width: 24px;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.myManuals-each-child-name {\n  width: 47px;\n}\n\n.myManuals-each-child-id {\n  width: 1px;\n}\n\nbutton {\n  display: inline-block;\n  font-weight: 300;\n  color: #212529;\n  text-align: center;\n  vertical-align: middle;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-color: #ef6101;\n  border: 1px solid transparent;\n  padding: 0.175rem 0.5rem;\n  font-size: 1rem;\n  line-height: 1.5;\n  border-radius: 0.25rem;\n  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n}\n\n.button-edit {\n  background-color: #ef6101;\n  color: white;\n}\n\n.button-view {\n  background-color: #079a9c;\n  color: white;\n}\n\n.button-delete {\n  background-color: red;\n  color: white;\n}\n\n.button-create {\n  margin: 2em;\n}\n\n.addManualContainer {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  height: 80vh;\n}\n\n.addManualColumn1 {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  width: 50vw;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n}\n\n.addManualColumn2 {\n  display: -webkit-box;\n  display: flex;\n  width: 50vw;\n}\n\n.inputContainer {\n  display: -webkit-box;\n  display: flex;\n  border-color: black;\n  border-style: solid;\n  border-bottom: none;\n  height: 20vh;\n}\n\n.addProcessContainer {\n  display: -webkit-box;\n  display: flex;\n  border-color: black;\n  border-style: solid;\n  height: 80vh;\n}\n\n.markdownPreviewContainer {\n  display: -webkit-box;\n  display: flex;\n  border-color: black;\n  border-style: solid;\n  border-left: none;\n  height: 80vh;\n  width: 50vw;\n}\n\n.markdownFirstPage {\n  display: -webkit-box;\n  display: flex;\n  text-align: center;\n  -webkit-box-align: center;\n          align-items: center;\n  width: 50vw;\n  -webkit-box-pack: center;\n          justify-content: center;\n}", ""]);
 
 // exports
 
@@ -84399,7 +84399,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _AddProcess_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AddProcess.js */ "./resources/js/components/AddProcess.js");
-/* harmony import */ var _EditManual_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./EditManual.js */ "./resources/js/components/EditManual.js");
+/* harmony import */ var _MarkdownPreview_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MarkdownPreview.js */ "./resources/js/components/MarkdownPreview.js");
+/* harmony import */ var _EditManual_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./EditManual.js */ "./resources/js/components/EditManual.js");
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -84419,6 +84420,7 @@ function _nonIterableRest() { throw new TypeError("Invalid attempt to destructur
 function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -84507,7 +84509,17 @@ var AddManual = function AddManual(props) {
       display: 'flex',
       flexDirection: "column"
     }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "Add Manual"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+    style: {
+      paddingTop: '56px'
+    }
+  }, "Add Manual:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "addManualContainer"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "addManualColumn1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "inputContainer"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
     method: "post"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Name of Manual"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     id: "name",
@@ -84515,9 +84527,17 @@ var AddManual = function AddManual(props) {
     placeholder: "Name of process",
     value: formInputValues.name,
     onChange: handleInputChange
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+  })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "addProcessContainer"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_AddProcess_js__WEBPACK_IMPORTED_MODULE_2__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     onClick: handleSubmitButtonClick
-  }, "Save manual")));
+  }, "Save manual")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "addManualColumn2"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "markdownPreviewContainer"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_MarkdownPreview_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    name: formInputValues.name
+  })))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AddManual);
@@ -84647,7 +84667,7 @@ var AddProcess = function AddProcess(props) {
       display: 'flex',
       flexDirection: "column"
     }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "Add Process"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Add Process"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
     method: "post"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Name of process"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     id: "name",
@@ -85106,7 +85126,12 @@ var Login = function Login(props) {
     }
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     type: "submit",
-    value: "Log in"
+    value: "Log in",
+    style: {
+      border: '1px solid blue',
+      margin: '5px',
+      backgroundColor: '#ef6101'
+    }
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     style: {
       marginTop: '1rem'
@@ -85142,7 +85167,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var LoginNav = function LoginNav(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "navPC"
+    className: "navLogin"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "logoPC"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -85159,6 +85184,30 @@ var LoginNav = function LoginNav(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LoginNav);
+
+/***/ }),
+
+/***/ "./resources/js/components/MarkdownPreview.js":
+/*!****************************************************!*\
+  !*** ./resources/js/components/MarkdownPreview.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var MarkdownPreview = function MarkdownPreview(props) {
+  console.log(props);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "markdownFirstPage"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, props.name));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (MarkdownPreview);
 
 /***/ }),
 
@@ -85458,7 +85507,7 @@ var NavigationBar = function NavigationBar(props) {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "About")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_4__["HashLink"], {
     to: "/#contactHomePage"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "Contact")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_4__["HashLink"], {
-    to: "/"
+    to: "/profile"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "Profile")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["NavItem"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
     onClick: handleLogout
   }, "Logout")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", null, "Hello ", props.user.user.name))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -85501,6 +85550,34 @@ var NavigationBar = function NavigationBar(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (NavigationBar);
+
+/***/ }),
+
+/***/ "./resources/js/components/Profile.js":
+/*!********************************************!*\
+  !*** ./resources/js/components/Profile.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+
+
+var Profile = function Profile(props) {
+  console.log(props);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    style: {
+      paddingTop: '56px'
+    }
+  }, "Profile:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Name: ", props.user.user.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Email: ", props.user.user.email)));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Profile);
 
 /***/ }),
 
@@ -85674,26 +85751,21 @@ var Register = function Register(props) {
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     user.token ? console.log('hey') : null;
   }, [user]);
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
-    style: {
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      padding: '1rem',
-      paddingTop: '2rem'
-    }
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "register"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "Process Manual"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
+    className: "registerForm"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Register"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", null, alert.error), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     id: "name",
     type: "text",
-    placeholder: "name",
+    placeholder: "Name",
     value: formInputValues.name,
     onChange: handleNameInputChange,
     style: formStyle
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     id: "email",
     type: "text",
-    placeholder: "E-mail",
+    placeholder: "Email",
     value: formInputValues.email,
     onChange: handleNameInputChange,
     style: formStyle
@@ -85710,13 +85782,7 @@ var Register = function Register(props) {
       border: '1px solid blue',
       margin: '5px'
     }
-  }, "Submit"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
-    to: "/",
-    onClick: handleSubmitButtonClick,
-    style: {
-      color: 'black'
-    }
-  }, "Click here!"));
+  }, "Submit")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Register);
@@ -85746,6 +85812,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _LoginNav_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./LoginNav.js */ "./resources/js/components/LoginNav.js");
 /* harmony import */ var _Login_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Login.js */ "./resources/js/components/Login.js");
 /* harmony import */ var _Register_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./Register.js */ "./resources/js/components/Register.js");
+/* harmony import */ var _Profile_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Profile.js */ "./resources/js/components/Profile.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
@@ -85753,6 +85820,7 @@ function _nonIterableRest() { throw new TypeError("Invalid attempt to destructur
 function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -85816,6 +85884,14 @@ var Routes = function Routes(props) {
       path: "/",
       exact: true,
       component: _Home_js__WEBPACK_IMPORTED_MODULE_3__["default"]
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+      path: "/profile",
+      render: function render() {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Profile_js__WEBPACK_IMPORTED_MODULE_13__["default"], {
+          user: user,
+          setUser: setUser
+        });
+      }
     }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
       path: "/manual/new",
       render: function render() {
