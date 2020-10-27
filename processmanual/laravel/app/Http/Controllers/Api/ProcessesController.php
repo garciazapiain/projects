@@ -19,7 +19,6 @@ class ProcessesController extends Controller
     {
         $newProcess = Process::create([
             'name' => $request->input('name'),
-            'frequency' => $request->input('frequency'),
             'manual_id' => $request->input('manual_id')
 
         ]);

@@ -32,6 +32,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 // Route::post('/manual/new', 'Api\ManualsController@store');
 // Route::get('/manual/edit/{$id}', 'Api\ManualsController@edit');
 Route::resource('manual', 'Api\ManualsController');
+Route::resource('process', 'Api\ProcessesController');
   });
 //Processes
 

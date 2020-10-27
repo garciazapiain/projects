@@ -226,6 +226,10 @@ button {
     background-color: red;
     color:white
 }
+.button-savenew{
+    background-color: grey;
+    color:black;
+}
 
 .button-create {
     margin: 2em;
@@ -256,6 +260,7 @@ button {
     border-style: solid;
     border-bottom: none;
     height: 20vh;
+    justify-content: center;
 }
 
 .addProcessContainer{
@@ -263,6 +268,8 @@ button {
     border-color: black;
     border-style: solid;
     height: 80vh;
+    justify-content: center;
+
 }
 
 //Markdown
@@ -276,9 +283,19 @@ button {
 }
 
 .markdownFirstPage{
+    display: grid;
+    width:100vw;
+}
+
+
+.markdownManualName{
     display: flex;
-    text-align: center;
     align-items: center;
-    width:50vw;
     justify-content: center;
+
+}
+.markdownDateCreated{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }

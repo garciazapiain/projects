@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import SaveManual from './SaveManual.js';
 
 const MyManuals = (props) => {
     const [manuals, setManuals] = useState([]);
     const [deletes, setDeletes] = useState(false);
-    console.log(props);
+    const [saveNewManual,setSaveNewManual]= useState(false);
+    // console.log(props);
+
+    function changeSaveNewManual (){
+        setSaveNewManual(!saveNewManual);
+        // console.log(saveNewManual);
+    }
     
     function editManual (manual) {
         props.setManual(manual);
@@ -45,9 +52,25 @@ const MyManuals = (props) => {
             }
                 fetchManuals();
             },[deletes]);
+    useEffect (() => {
+        async function fetchManuals(){
+            const response = await fetch('http://www.processmanual.test:8080/api/manual',{
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/json',
+                    'Authorization': 'Bearer ' + props.user.token,
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'Content-Type': 'application/json'
+                },
+                })
+                const data = await response.json();
+                setManuals(data)
+            }
+                fetchManuals();
+            },[setManuals]);
 
     if (manuals){
-        console.log(manuals)
+        // console.log(manuals)
         return (
                 <>
                 <h1 style={{paddingTop:'56px'}}>My Manuals:</h1>
@@ -93,9 +116,21 @@ const MyManuals = (props) => {
                 <div style={{margin:"2em", display:"flex", justifyContent:"center"}}>
                     <Link to="/manual/new" className="btn btn-primary">Create New Manual</Link>
                 </div>
-                </>
+                <div className="myManuals-each-child">
+                    {/* Testing */}
+                    <button className="button-savenew" onClick={ changeSaveNewManual}>Test</button>
+                </div>
+                
+        
+            {saveNewManual==true ? 
+                <SaveManual
+                manual = {props.manual}
+                user = {props.user}
+                setUser={props.setUser} /> : null
+                } 
+            </>
         )
-    } return ('Loading...')
+    }
 }
 
 export default MyManuals;

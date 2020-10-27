@@ -9,7 +9,7 @@ class Process extends Model
 {
     //
     protected $fillable = [
-        'name', 'frequency', 'manual_id'
+        'name','manual_id'
     ];
 
     public function manual()

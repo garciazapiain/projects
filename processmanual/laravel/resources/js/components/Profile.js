@@ -9,6 +9,7 @@ return (
     <>
     <h1 style={{paddingTop:'56px'}}>Profile:</h1>
     <div>
+        <img src={props.user.user.image}/>
         <h3>Name: {props.user.user.name}</h3>
         <h3>Email: {props.user.user.email}</h3>
     </div>

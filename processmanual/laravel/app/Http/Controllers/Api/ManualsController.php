@@ -54,7 +54,7 @@ class ManualsController extends Controller
             $manual->user_id = auth()->user()->id;
             $manual->save();
             
-            return redirect('/manual/mymanuals')->with('success', 'Post Created');
+            // return redirect('/manual/mymanuals')->with('success', 'Post Created');
     }
 
     /**

@@ -44,7 +44,7 @@ useEffect(() => {
 
 if (user.loggedIn && user.token) {
   console.log(user);
-  console.log("this is user token" + user.token);
+  console.log("this is user token " + user.token);
   return(
       <HashRouter history={history}>
         <NavigationBar 
@@ -79,6 +79,7 @@ if (user.loggedIn && user.token) {
               render={()=>
               <EditManual
                 manual={manual}
+                user = {user}
               />
             }/>
             <Route path={`/manual/view/${manual.id}`} 

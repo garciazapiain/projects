@@ -6969,7 +6969,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "a {\n  color: white;\n}\n\n.navLogin {\n  background-color: #045658;\n  color: white;\n  width: 100vw;\n  height: 56px;\n  display: -webkit-box;\n  display: flex;\n  top: 0;\n  position: fixed;\n}\n.navLogin .logoPC {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n@media only screen and (max-width: 500px) {\n  .navPC {\n    display: none;\n  }\n}\n@media only screen and (min-width: 500px) {\n  .navPC {\n    background-color: #045658;\n    color: white;\n    width: 100vw;\n    height: 56px;\n    display: -webkit-box;\n    display: flex;\n    top: 0;\n    position: fixed;\n  }\n  .navPC .logoPC {\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-align: center;\n            align-items: center;\n  }\n}\n\n.navMobile {\n  background-color: #045658;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n          align-items: center;\n  top: 0;\n  position: fixed;\n  width: 100vw;\n}\n@media only screen and (min-width: 500px) {\n  .navMobile {\n    display: none;\n  }\n}\n.navMobile .logoMobile {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n.navMobileItems {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  text-align: right;\n  -webkit-box-pack: right;\n          justify-content: right;\n}\n\n.navbar-toggler {\n  margin: 0 auto;\n}\n\n.navButton {\n  padding: 0 20px 0 20px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  -webkit-box-align: center;\n          align-items: center;\n  width: 100vw;\n}\n\n.footer {\n  display: -webkit-box;\n  display: flex;\n  background-color: #fdac07;\n  width: 100vw;\n  margin: auto;\n}\n\n.login {\n  padding-top: 56px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n}\n.login h1 {\n  font-size: 100px;\n  font-family: Arial, Helvetica, sans-serif;\n}\n@media only screen and (max-width: 715px) {\n  .login h1 {\n    font-size: 60px;\n    text-align: center;\n  }\n}\n\n.login-form {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  -webkit-box-align: center;\n          align-items: center;\n  text-align: center;\n}\n\n.register {\n  padding-top: 56px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.register h1 {\n  font-size: 100px;\n  font-family: Arial, Helvetica, sans-serif;\n}\n@media only screen and (max-width: 715px) {\n  .register h1 {\n    font-size: 60px;\n    text-align: center;\n  }\n}\n\n.registerForm {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.manualsHomePage {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  padding-top: 56px;\n}\n.manualsHomePage .manualsHomePage1 {\n  background-color: #47802b;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .manualsHomePage2 {\n  background-color: #ef6101;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .addManualExpand {\n  background-color: #47802b;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n.manualsHomePage .myManualExpand {\n  background-color: #ef6101;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n\n.aboutHomePage {\n  background-color: #03161d;\n  color: white;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  padding-top: 56px;\n}\n\n.contactHomePage {\n  background-color: #47802b;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  margin-bottom: 0;\n  padding-top: 56px;\n}\n\n.myManuals-each {\n  display: -webkit-box;\n  display: flex;\n  margin: 1em;\n  justify-content: space-around;\n}\n\n.myManuals-each-child {\n  width: 24px;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.myManuals-each-child-name {\n  width: 47px;\n}\n\n.myManuals-each-child-id {\n  width: 1px;\n}\n\nbutton {\n  display: inline-block;\n  font-weight: 300;\n  color: #212529;\n  text-align: center;\n  vertical-align: middle;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-color: #ef6101;\n  border: 1px solid transparent;\n  padding: 0.175rem 0.5rem;\n  font-size: 1rem;\n  line-height: 1.5;\n  border-radius: 0.25rem;\n  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n}\n\n.button-edit {\n  background-color: #ef6101;\n  color: white;\n}\n\n.button-view {\n  background-color: #079a9c;\n  color: white;\n}\n\n.button-delete {\n  background-color: red;\n  color: white;\n}\n\n.button-create {\n  margin: 2em;\n}\n\n.addManualContainer {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  height: 80vh;\n}\n\n.addManualColumn1 {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  width: 50vw;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n}\n\n.addManualColumn2 {\n  display: -webkit-box;\n  display: flex;\n  width: 50vw;\n}\n\n.inputContainer {\n  display: -webkit-box;\n  display: flex;\n  border-color: black;\n  border-style: solid;\n  border-bottom: none;\n  height: 20vh;\n}\n\n.addProcessContainer {\n  display: -webkit-box;\n  display: flex;\n  border-color: black;\n  border-style: solid;\n  height: 80vh;\n}\n\n.markdownPreviewContainer {\n  display: -webkit-box;\n  display: flex;\n  border-color: black;\n  border-style: solid;\n  border-left: none;\n  height: 80vh;\n  width: 50vw;\n}\n\n.markdownFirstPage {\n  display: -webkit-box;\n  display: flex;\n  text-align: center;\n  -webkit-box-align: center;\n          align-items: center;\n  width: 50vw;\n  -webkit-box-pack: center;\n          justify-content: center;\n}", ""]);
+exports.push([module.i, "a {\n  color: white;\n}\n\n.navLogin {\n  background-color: #045658;\n  color: white;\n  width: 100vw;\n  height: 56px;\n  display: -webkit-box;\n  display: flex;\n  top: 0;\n  position: fixed;\n}\n.navLogin .logoPC {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n@media only screen and (max-width: 500px) {\n  .navPC {\n    display: none;\n  }\n}\n@media only screen and (min-width: 500px) {\n  .navPC {\n    background-color: #045658;\n    color: white;\n    width: 100vw;\n    height: 56px;\n    display: -webkit-box;\n    display: flex;\n    top: 0;\n    position: fixed;\n  }\n  .navPC .logoPC {\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-align: center;\n            align-items: center;\n  }\n}\n\n.navMobile {\n  background-color: #045658;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n          align-items: center;\n  top: 0;\n  position: fixed;\n  width: 100vw;\n}\n@media only screen and (min-width: 500px) {\n  .navMobile {\n    display: none;\n  }\n}\n.navMobile .logoMobile {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n.navMobileItems {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  text-align: right;\n  -webkit-box-pack: right;\n          justify-content: right;\n}\n\n.navbar-toggler {\n  margin: 0 auto;\n}\n\n.navButton {\n  padding: 0 20px 0 20px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  -webkit-box-align: center;\n          align-items: center;\n  width: 100vw;\n}\n\n.footer {\n  display: -webkit-box;\n  display: flex;\n  background-color: #fdac07;\n  width: 100vw;\n  margin: auto;\n}\n\n.login {\n  padding-top: 56px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n}\n.login h1 {\n  font-size: 100px;\n  font-family: Arial, Helvetica, sans-serif;\n}\n@media only screen and (max-width: 715px) {\n  .login h1 {\n    font-size: 60px;\n    text-align: center;\n  }\n}\n\n.login-form {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  -webkit-box-align: center;\n          align-items: center;\n  text-align: center;\n}\n\n.register {\n  padding-top: 56px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.register h1 {\n  font-size: 100px;\n  font-family: Arial, Helvetica, sans-serif;\n}\n@media only screen and (max-width: 715px) {\n  .register h1 {\n    font-size: 60px;\n    text-align: center;\n  }\n}\n\n.registerForm {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.manualsHomePage {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  padding-top: 56px;\n}\n.manualsHomePage .manualsHomePage1 {\n  background-color: #47802b;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .manualsHomePage2 {\n  background-color: #ef6101;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .addManualExpand {\n  background-color: #47802b;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n.manualsHomePage .myManualExpand {\n  background-color: #ef6101;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n\n.aboutHomePage {\n  background-color: #03161d;\n  color: white;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  padding-top: 56px;\n}\n\n.contactHomePage {\n  background-color: #47802b;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  margin-bottom: 0;\n  padding-top: 56px;\n}\n\n.myManuals-each {\n  display: -webkit-box;\n  display: flex;\n  margin: 1em;\n  justify-content: space-around;\n}\n\n.myManuals-each-child {\n  width: 24px;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.myManuals-each-child-name {\n  width: 47px;\n}\n\n.myManuals-each-child-id {\n  width: 1px;\n}\n\nbutton {\n  display: inline-block;\n  font-weight: 300;\n  color: #212529;\n  text-align: center;\n  vertical-align: middle;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-color: #ef6101;\n  border: 1px solid transparent;\n  padding: 0.175rem 0.5rem;\n  font-size: 1rem;\n  line-height: 1.5;\n  border-radius: 0.25rem;\n  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n}\n\n.button-edit {\n  background-color: #ef6101;\n  color: white;\n}\n\n.button-view {\n  background-color: #079a9c;\n  color: white;\n}\n\n.button-delete {\n  background-color: red;\n  color: white;\n}\n\n.button-savenew {\n  background-color: grey;\n  color: black;\n}\n\n.button-create {\n  margin: 2em;\n}\n\n.addManualContainer {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  height: 80vh;\n}\n\n.addManualColumn1 {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  width: 50vw;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n}\n\n.addManualColumn2 {\n  display: -webkit-box;\n  display: flex;\n  width: 50vw;\n}\n\n.inputContainer {\n  display: -webkit-box;\n  display: flex;\n  border-color: black;\n  border-style: solid;\n  border-bottom: none;\n  height: 20vh;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.addProcessContainer {\n  display: -webkit-box;\n  display: flex;\n  border-color: black;\n  border-style: solid;\n  height: 80vh;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.markdownPreviewContainer {\n  display: -webkit-box;\n  display: flex;\n  border-color: black;\n  border-style: solid;\n  border-left: none;\n  height: 80vh;\n  width: 50vw;\n}\n\n.markdownFirstPage {\n  display: grid;\n  width: 100vw;\n}\n\n.markdownManualName {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.markdownDateCreated {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: end;\n          align-items: flex-end;\n  -webkit-box-pack: end;\n          justify-content: flex-end;\n}", ""]);
 
 // exports
 
@@ -84401,6 +84401,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _AddProcess_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AddProcess.js */ "./resources/js/components/AddProcess.js");
 /* harmony import */ var _MarkdownPreview_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MarkdownPreview.js */ "./resources/js/components/MarkdownPreview.js");
 /* harmony import */ var _EditManual_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./EditManual.js */ "./resources/js/components/EditManual.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -84426,23 +84427,41 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 var AddManual = function AddManual(props) {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
     name: 'manual'
   }),
       _useState2 = _slicedToArray(_useState, 2),
-      formInputValues = _useState2[0],
-      setFormInputValues = _useState2[1];
+      manualFormInputValues = _useState2[0],
+      setManualFormInputValues = _useState2[1];
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({}),
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
+    name: 'process'
+  }),
       _useState4 = _slicedToArray(_useState3, 2),
-      process = _useState4[0],
-      setProcess = _useState4[1];
+      processFormInputValues = _useState4[0],
+      setProcessFormInputValues = _useState4[1];
 
-  console.log(props);
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({}),
+      _useState6 = _slicedToArray(_useState5, 2),
+      process = _useState6[0],
+      setProcess = _useState6[1];
 
-  var handleInputChange = function handleInputChange(e) {
-    setFormInputValues(_objectSpread({}, formInputValues, _defineProperty({}, e.target.id, e.target.value)));
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(true),
+      _useState8 = _slicedToArray(_useState7, 2),
+      addingProcess = _useState8[0],
+      setAddingProcess = _useState8[1]; // console.log(props);
+
+
+  console.log(addingProcess);
+
+  var manualHandleInputChange = function manualHandleInputChange(e) {
+    setManualFormInputValues(_objectSpread({}, manualFormInputValues, _defineProperty({}, e.target.id, e.target.value)));
+  };
+
+  var processHandleInputChange = function processHandleInputChange(e) {
+    setManualFormInputValues(_objectSpread({}, manualFormInputValues, _defineProperty({}, e.target.id, e.target.value)));
   };
 
   var handleSubmitButtonClick = function handleSubmitButtonClick(e) {
@@ -84474,7 +84493,7 @@ var AddManual = function AddManual(props) {
                   },
                   responseType: 'json',
                   body: JSON.stringify({
-                    'name': formInputValues.name
+                    'name': manualFormInputValues.name
                   })
                 });
 
@@ -84504,40 +84523,144 @@ var AddManual = function AddManual(props) {
     }
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    style: {
-      display: 'flex',
-      flexDirection: "column"
+  var handleProcessSubmitButtonClick = function handleProcessSubmitButtonClick(e) {
+    e.preventDefault();
+
+    function postSubmit() {
+      return _postSubmit2.apply(this, arguments);
     }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
-    style: {
-      paddingTop: '56px'
+
+    function _postSubmit2() {
+      _postSubmit2 = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+        var response, data;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.next = 2;
+                return fetch('http://www.processmanual.test:8080/api/process', {
+                  method: 'POST',
+                  // withCredentials: true,
+                  // credentials: 'include',
+                  headers: {
+                    'Accept': 'application/json',
+                    'Authorization': 'Bearer ' + props.user.token,
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'Content-Type': 'application/json'
+                  },
+                  responseType: 'json',
+                  body: JSON.stringify({
+                    'name': processFormInputValues.name
+                  })
+                });
+
+              case 2:
+                response = _context2.sent;
+                _context2.next = 5;
+                return response.json();
+
+              case 5:
+                data = _context2.sent;
+                console.log(data);
+
+              case 7:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2);
+      }));
+      return _postSubmit2.apply(this, arguments);
     }
-  }, "Add Manual:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "addManualContainer"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "addManualColumn1"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "inputContainer"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
-    method: "post"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Name of Manual"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-    id: "name",
-    type: "text",
-    placeholder: "Name of process",
-    value: formInputValues.name,
-    onChange: handleInputChange
-  })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "addProcessContainer"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_AddProcess_js__WEBPACK_IMPORTED_MODULE_2__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    onClick: handleSubmitButtonClick
-  }, "Save manual")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "addManualColumn2"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "markdownPreviewContainer"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_MarkdownPreview_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    name: formInputValues.name
-  })))));
+
+    try {
+      postSubmit();
+    } catch (e) {
+      console.log('errors', e);
+    }
+  };
+
+  if (addingProcess) {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      style: {
+        display: 'flex',
+        flexDirection: "column"
+      }
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+      style: {
+        paddingTop: '56px'
+      }
+    }, "Add Manual:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "addManualContainer"
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "addManualColumn1"
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "inputContainer"
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
+      method: "post"
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Name of Manual"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+      id: "name",
+      type: "text",
+      value: manualFormInputValues.name,
+      onChange: manualHandleInputChange
+    })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "addProcessContainer"
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_AddProcess_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      addingProcess: addingProcess,
+      setAddingProcess: setAddingProcess
+    })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", null, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Link"], {
+      to: "/manual/edit/",
+      onClick: handleSubmitButtonClick
+    }, "Save Manual"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "addManualColumn2"
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "markdownPreviewContainer"
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_MarkdownPreview_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      name: manualFormInputValues.name,
+      user: props.user
+    })))));
+  } else {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      style: {
+        display: 'flex',
+        flexDirection: "column"
+      }
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+      style: {
+        paddingTop: '56px'
+      }
+    }, "Add Process:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "addManualContainer"
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "addManualColumn1"
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "inputContainer"
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
+      method: "post"
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Name of Process"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+      id: "name",
+      type: "text",
+      placeholder: "Name of process",
+      value: processFormInputValues.name,
+      onChange: processHandleInputChange
+    })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "addProcessContainer"
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_AddProcess_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      addingProcess: addingProcess,
+      setAddingProcess: setAddingProcess
+    })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+      onClick: handleProcessSubmitButtonClick
+    }, "Save Process")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "addManualColumn2"
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "markdownPreviewContainer"
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_MarkdownPreview_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      name: manualFormInputValues.name,
+      user: props.user
+    })))));
+  }
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AddManual);
@@ -84584,19 +84707,25 @@ var AddProcess = function AddProcess(props) {
     name: 'process'
   }),
       _useState2 = _slicedToArray(_useState, 2),
-      formInputValues = _useState2[0],
-      setFormInputValues = _useState2[1];
+      processFormInputValues = _useState2[0],
+      setProcessFormInputValues = _useState2[1];
 
   var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
     frequency: 'daily'
   }),
       _useState4 = _slicedToArray(_useState3, 2),
       formSelectValues = _useState4[0],
-      setFormSelectValues = _useState4[1];
+      setFormSelectValues = _useState4[1]; // console.log('hey im add process', props);
+
 
   var handleInputChange = function handleInputChange(e) {
-    setFormInputValues(_objectSpread({}, formInputValues, _defineProperty({}, e.target.id, e.target.value)));
+    setProcessFormInputValues(_objectSpread({}, processFormInputValues, _defineProperty({}, e.target.id, e.target.value)));
   };
+
+  function buttonAddProcess() {
+    props.setAddingProcess(!props.addingProcess);
+    console.log(props.addingProcess);
+  }
 
   var handleSelectChange = function handleSelectChange(e) {
     setFormSelectValues(_objectSpread({}, formSelectValues, _defineProperty({}, e.target.id, e.target.value)));
@@ -84619,20 +84748,19 @@ var AddProcess = function AddProcess(props) {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return fetch('http://www.processmanual.test:8080/api/processes/new', {
+                return fetch('http://www.processmanual.test:8080/api/processes', {
                   method: 'POST',
                   // withCredentials: true,
                   // credentials: 'include',
                   headers: {
                     'Accept': 'application/json',
-                    // 'Authorization': 'Bearer ' + token,
-                    // 'X-Requested-With': 'XMLHttpRequest',
+                    'Authorization': 'Bearer ' + props.user.token,
+                    'X-Requested-With': 'XMLHttpRequest',
                     'Content-Type': 'application/json'
                   },
                   responseType: 'json',
                   body: JSON.stringify({
-                    'name': formInputValues.name,
-                    'frequency': formSelectValues.frequency
+                    'name': processFormInputValues.name
                   })
                 });
 
@@ -84662,32 +84790,36 @@ var AddProcess = function AddProcess(props) {
     }
   };
 
+  if (props.addingProcess) {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      style: {
+        display: 'flex',
+        flexDirection: "column"
+      }
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Name of process"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+      id: "name",
+      type: "text",
+      placeholder: "Name of process",
+      value: processFormInputValues.name,
+      onChange: handleInputChange
+    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+      onClick: buttonAddProcess
+    }, "+")));
+  }
+
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     style: {
       display: 'flex',
       flexDirection: "column"
     }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Add Process"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
-    method: "post"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Name of process"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Name of Step"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     id: "name",
     type: "text",
-    placeholder: "Name of process",
-    value: formInputValues.name,
+    value: processFormInputValues.name,
     onChange: handleInputChange
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Frequency of occurence"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("select", {
-    id: "frequency",
-    value: formSelectValues.frequency,
-    onChange: handleSelectChange
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
-    value: "daily"
-  }, "Daily"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
-    value: "weekly"
-  }, "Weekly"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", {
-    value: "variable"
-  }, "Variable"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    onClick: handleSubmitButtonClick
-  }, "Add process")));
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    onClick: buttonAddProcess
+  }, "+")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AddProcess);
@@ -84782,6 +84914,12 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
@@ -84797,6 +84935,17 @@ var EditManual = function EditManual(props) {
       _useState2 = _slicedToArray(_useState, 2),
       manual = _useState2[0],
       setManual = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
+    name: ''
+  }),
+      _useState4 = _slicedToArray(_useState3, 2),
+      formInputValues = _useState4[0],
+      setFormInputValues = _useState4[1];
+
+  var handleInputChange = function handleInputChange(e) {
+    setFormInputValues(_objectSpread({}, formInputValues, _defineProperty({}, e.target.id, e.target.value)));
+  };
 
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     var id = JSON.parse(window.localStorage.getItem('id'));
@@ -84819,8 +84968,8 @@ var EditManual = function EditManual(props) {
                   method: 'GET',
                   headers: {
                     'Accept': 'application/json',
-                    // 'Authorization': 'Bearer ' + token,
-                    // 'X-Requested-With': 'XMLHttpRequest',
+                    'Authorization': 'Bearer ' + props.user.token,
+                    'X-Requested-With': 'XMLHttpRequest',
                     'Content-Type': 'application/json'
                   }
                 });
@@ -84846,7 +84995,78 @@ var EditManual = function EditManual(props) {
 
     fetchManual();
   }, []);
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "Edit Manual"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Manual id: ", manual.id), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Manual name: ", manual.name));
+
+  var handleSubmitButton = function handleSubmitButton(e) {
+    e.preventDefault();
+
+    function postSubmit() {
+      return _postSubmit.apply(this, arguments);
+    }
+
+    function _postSubmit() {
+      _postSubmit = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+        var response;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.next = 2;
+                return fetch("http://www.processmanual.test:8080/api/manual/".concat(props.manual.id, "/edit"), {
+                  method: 'GET',
+                  // withCredentials: true,
+                  // credentials: 'include',
+                  headers: {
+                    'Accept': 'application/json',
+                    'Authorization': 'Bearer ' + props.user.token,
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'Content-Type': 'application/json'
+                  },
+                  responseType: 'json',
+                  body: JSON.stringify({
+                    'name': formInputValues.name
+                  })
+                });
+
+              case 2:
+                response = _context2.sent;
+                _context2.next = 5;
+                return response.json();
+
+              case 5:
+                data = _context2.sent;
+                setData(data);
+
+              case 7:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2);
+      }));
+      return _postSubmit.apply(this, arguments);
+    }
+
+    try {
+      postSubmit();
+    } catch (e) {
+      console.log('errors', e);
+    }
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+    style: {
+      paddingTop: '56px'
+    }
+  }, "Edit Manual"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Manual id: ", props.manual.id), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Manual name: ", props.manual.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Change name:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+    id: "name",
+    type: "text",
+    value: formInputValues.name,
+    onChange: handleInputChange
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    onClick: handleSubmitButton
+  }, "Save"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (EditManual);
@@ -85201,10 +85421,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var MarkdownPreview = function MarkdownPreview(props) {
-  console.log(props);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "markdownFirstPage"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, props.name));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "markdownImage"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    style: {
+      padding: "2em"
+    },
+    src: props.user.user.image
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "markdownManualName"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, props.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "markdownDateCreated"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Created:", props.user.user.created_at)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (MarkdownPreview);
@@ -85225,6 +85455,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _SaveManual_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SaveManual.js */ "./resources/js/components/SaveManual.js");
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -85242,6 +85473,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 var MyManuals = function MyManuals(props) {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
       _useState2 = _slicedToArray(_useState, 2),
@@ -85253,7 +85485,15 @@ var MyManuals = function MyManuals(props) {
       deletes = _useState4[0],
       setDeletes = _useState4[1];
 
-  console.log(props);
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+      _useState6 = _slicedToArray(_useState5, 2),
+      saveNewManual = _useState6[0],
+      setSaveNewManual = _useState6[1]; // console.log(props);
+
+
+  function changeSaveNewManual() {
+    setSaveNewManual(!saveNewManual); // console.log(saveNewManual);
+  }
 
   function editManual(manual) {
     props.setManual(manual);
@@ -85325,9 +85565,55 @@ var MyManuals = function MyManuals(props) {
 
     fetchManuals();
   }, [deletes]);
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    function fetchManuals() {
+      return _fetchManuals2.apply(this, arguments);
+    }
+
+    function _fetchManuals2() {
+      _fetchManuals2 = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+        var response, data;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.next = 2;
+                return fetch('http://www.processmanual.test:8080/api/manual', {
+                  method: 'GET',
+                  headers: {
+                    'Accept': 'application/json',
+                    'Authorization': 'Bearer ' + props.user.token,
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'Content-Type': 'application/json'
+                  }
+                });
+
+              case 2:
+                response = _context2.sent;
+                _context2.next = 5;
+                return response.json();
+
+              case 5:
+                data = _context2.sent;
+                setManuals(data);
+
+              case 7:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2);
+      }));
+      return _fetchManuals2.apply(this, arguments);
+    }
+
+    fetchManuals();
+  }, [setManuals]);
 
   if (manuals) {
-    console.log(manuals);
+    // console.log(manuals)
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
       style: {
         paddingTop: '56px'
@@ -85378,10 +85664,17 @@ var MyManuals = function MyManuals(props) {
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
       to: "/manual/new",
       className: "btn btn-primary"
-    }, "Create New Manual")));
+    }, "Create New Manual")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "myManuals-each-child"
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+      className: "button-savenew",
+      onClick: changeSaveNewManual
+    }, "Test")), saveNewManual == true ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SaveManual_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      manual: props.manual,
+      user: props.user,
+      setUser: props.setUser
+    }) : null);
   }
-
-  return 'Loading...';
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (MyManuals);
@@ -85574,7 +85867,9 @@ var Profile = function Profile(props) {
     style: {
       paddingTop: '56px'
     }
-  }, "Profile:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Name: ", props.user.user.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Email: ", props.user.user.email)));
+  }, "Profile:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: props.user.user.image
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Name: ", props.user.user.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Email: ", props.user.user.email)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Profile);
@@ -85874,7 +86169,7 @@ var Routes = function Routes(props) {
 
   if (user.loggedIn && user.token) {
     console.log(user);
-    console.log("this is user token" + user.token);
+    console.log("this is user token " + user.token);
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["HashRouter"], {
       history: _history_js__WEBPACK_IMPORTED_MODULE_2__["default"]
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavigationBar_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -85913,7 +86208,8 @@ var Routes = function Routes(props) {
       path: "/manual/edit/".concat(manual.id),
       render: function render() {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_EditManual__WEBPACK_IMPORTED_MODULE_8__["default"], {
-          manual: manual
+          manual: manual,
+          user: user
         });
       }
     }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
@@ -85955,6 +86251,136 @@ var Routes = function Routes(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Routes);
+
+/***/ }),
+
+/***/ "./resources/js/components/SaveManual.js":
+/*!***********************************************!*\
+  !*** ./resources/js/components/SaveManual.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+var SaveManual = function SaveManual(props) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
+    name: ''
+  }),
+      _useState2 = _slicedToArray(_useState, 2),
+      formInputValues = _useState2[0],
+      setFormInputValues = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({}),
+      _useState4 = _slicedToArray(_useState3, 2),
+      data = _useState4[0],
+      setData = _useState4[1];
+
+  var handleInputChange = function handleInputChange(e) {
+    setFormInputValues(_objectSpread({}, formInputValues, _defineProperty({}, e.target.id, e.target.value)));
+  };
+
+  console.log(props.user.token);
+
+  var handleSubmitButton = function handleSubmitButton(e) {
+    e.preventDefault();
+
+    function postSubmit() {
+      return _postSubmit.apply(this, arguments);
+    }
+
+    function _postSubmit() {
+      _postSubmit = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var response;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return fetch('http://www.processmanual.test:8080/api/manual', {
+                  method: 'POST',
+                  // withCredentials: true,
+                  // credentials: 'include',
+                  headers: {
+                    'Accept': 'application/json',
+                    'Authorization': 'Bearer ' + props.user.token,
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'Content-Type': 'application/json'
+                  },
+                  responseType: 'json',
+                  body: JSON.stringify({
+                    'name': formInputValues.name
+                  })
+                });
+
+              case 2:
+                response = _context.sent;
+                _context.next = 5;
+                return response.json();
+
+              case 5:
+                data = _context.sent;
+                setData(data);
+
+              case 7:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+      return _postSubmit.apply(this, arguments);
+    }
+
+    try {
+      postSubmit();
+    } catch (e) {
+      console.log('errors', e);
+    }
+  };
+
+  console.log(data);
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "Save New Manual"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+    id: "name",
+    type: "text",
+    value: formInputValues.name,
+    onChange: handleInputChange
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    onClick: handleSubmitButton
+  }, "Save"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SaveManual);
 
 /***/ }),
 

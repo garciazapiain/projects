@@ -15,10 +15,8 @@ class CreateProcessesTable extends Migration
     {
         Schema::create('processes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('frequency');
             $table->unsignedBigInteger('manual_id');
-            $table->unsignedBigInteger('category_id');
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -33,4 +31,3 @@ class CreateProcessesTable extends Migration
         Schema::dropIfExists('processes');
     }
 }
-
