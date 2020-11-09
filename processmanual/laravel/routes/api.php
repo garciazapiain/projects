@@ -22,6 +22,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
   // public routes
   Route::post('login', 'Api\AuthController@login')->name('login.api');
   Route::post('register', 'Api\AuthController@register')->name('register.api');
+  // Route::get('/users', 'Api\UsersController@index');
 
   // private routes
   Route::middleware('auth:api')->group(function () {
@@ -33,6 +34,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 // Route::get('/manual/edit/{$id}', 'Api\ManualsController@edit');
 Route::resource('manual', 'Api\ManualsController');
 Route::resource('process', 'Api\ProcessesController');
+Route::resource('/users', 'Api\UsersController');
   });
 //Processes
 

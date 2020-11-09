@@ -77,7 +77,7 @@ class ManualsController extends Controller
      */
     public function edit($id)
     {
-        $manual = Manual::get($id);
+        $manual = Manual::find($id);
         return $manual;
     }
 
@@ -91,7 +91,22 @@ class ManualsController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $manual = Manual::find($id);
+        $this -> validate($request, [
+                'name' => 'required',
+            ]);
+        $manual->name = $request->input('name');
+        $manual->save();
     }
+    // $this -> validate($request, [
+    //     'name' => 'required',
+    // ]);
+    //     $manual = new Manual;
+    //     $manual->name = $request->input('name');
+    //     $manual->user_id = auth()->user()->id;
+    //     $manual->save();
+    // $shark = shark::find($id);
+    //         $shark->name       = Input::get('name');
 
     /**
      * Remove the specified resource from storage.

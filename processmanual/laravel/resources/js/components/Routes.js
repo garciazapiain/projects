@@ -26,7 +26,8 @@ const Routes = props => {
     user: {
       name : '',
       email: '',
-      password: ''
+      password: '',
+      image:''
     }
 });
 

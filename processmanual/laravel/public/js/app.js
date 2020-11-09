@@ -6969,7 +6969,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "a {\n  color: white;\n}\n\n.navLogin {\n  background-color: #045658;\n  color: white;\n  width: 100vw;\n  height: 56px;\n  display: -webkit-box;\n  display: flex;\n  top: 0;\n  position: fixed;\n}\n.navLogin .logoPC {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n@media only screen and (max-width: 500px) {\n  .navPC {\n    display: none;\n  }\n}\n@media only screen and (min-width: 500px) {\n  .navPC {\n    background-color: #045658;\n    color: white;\n    width: 100vw;\n    height: 56px;\n    display: -webkit-box;\n    display: flex;\n    top: 0;\n    position: fixed;\n  }\n  .navPC .logoPC {\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-align: center;\n            align-items: center;\n  }\n}\n\n.navMobile {\n  background-color: #045658;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n          align-items: center;\n  top: 0;\n  position: fixed;\n  width: 100vw;\n}\n@media only screen and (min-width: 500px) {\n  .navMobile {\n    display: none;\n  }\n}\n.navMobile .logoMobile {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n.navMobileItems {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  text-align: right;\n  -webkit-box-pack: right;\n          justify-content: right;\n}\n\n.navbar-toggler {\n  margin: 0 auto;\n}\n\n.navButton {\n  padding: 0 20px 0 20px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  -webkit-box-align: center;\n          align-items: center;\n  width: 100vw;\n}\n\n.footer {\n  display: -webkit-box;\n  display: flex;\n  background-color: #fdac07;\n  width: 100vw;\n  margin: auto;\n}\n\n.login {\n  padding-top: 56px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n}\n.login h1 {\n  font-size: 100px;\n  font-family: Arial, Helvetica, sans-serif;\n}\n@media only screen and (max-width: 715px) {\n  .login h1 {\n    font-size: 60px;\n    text-align: center;\n  }\n}\n\n.login-form {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  -webkit-box-align: center;\n          align-items: center;\n  text-align: center;\n}\n\n.register {\n  padding-top: 56px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.register h1 {\n  font-size: 100px;\n  font-family: Arial, Helvetica, sans-serif;\n}\n@media only screen and (max-width: 715px) {\n  .register h1 {\n    font-size: 60px;\n    text-align: center;\n  }\n}\n\n.registerForm {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.manualsHomePage {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  padding-top: 56px;\n}\n.manualsHomePage .manualsHomePage1 {\n  background-color: #47802b;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .manualsHomePage2 {\n  background-color: #ef6101;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n}\n.manualsHomePage .addManualExpand {\n  background-color: #47802b;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n.manualsHomePage .myManualExpand {\n  background-color: #ef6101;\n  -webkit-box-flex: 3;\n          flex-grow: 3;\n}\n\n.aboutHomePage {\n  background-color: #03161d;\n  color: white;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  padding-top: 56px;\n}\n\n.contactHomePage {\n  background-color: #47802b;\n  display: -webkit-box;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  margin-bottom: 0;\n  padding-top: 56px;\n}\n\n.myManuals-each {\n  display: -webkit-box;\n  display: flex;\n  margin: 1em;\n  justify-content: space-around;\n}\n\n.myManuals-each-child {\n  width: 24px;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.myManuals-each-child-name {\n  width: 47px;\n}\n\n.myManuals-each-child-id {\n  width: 1px;\n}\n\nbutton {\n  display: inline-block;\n  font-weight: 300;\n  color: #212529;\n  text-align: center;\n  vertical-align: middle;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-color: #ef6101;\n  border: 1px solid transparent;\n  padding: 0.175rem 0.5rem;\n  font-size: 1rem;\n  line-height: 1.5;\n  border-radius: 0.25rem;\n  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n}\n\n.button-edit {\n  background-color: #ef6101;\n  color: white;\n}\n\n.button-view {\n  background-color: #079a9c;\n  color: white;\n}\n\n.button-delete {\n  background-color: red;\n  color: white;\n}\n\n.button-savenew {\n  background-color: grey;\n  color: black;\n}\n\n.button-create {\n  margin: 2em;\n}\n\n.addManualContainer {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  height: 80vh;\n}\n\n.addManualColumn1 {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  width: 50vw;\n  -webkit-box-pack: justify;\n          justify-content: space-between;\n}\n\n.addManualColumn2 {\n  display: -webkit-box;\n  display: flex;\n  width: 50vw;\n}\n\n.inputContainer {\n  display: -webkit-box;\n  display: flex;\n  border-color: black;\n  border-style: solid;\n  border-bottom: none;\n  height: 20vh;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.addProcessContainer {\n  display: -webkit-box;\n  display: flex;\n  border-color: black;\n  border-style: solid;\n  height: 80vh;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.markdownPreviewContainer {\n  display: -webkit-box;\n  display: flex;\n  border-color: black;\n  border-style: solid;\n  border-left: none;\n  height: 80vh;\n  width: 50vw;\n}\n\n.markdownFirstPage {\n  display: grid;\n  width: 100vw;\n}\n\n.markdownManualName {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n          justify-content: center;\n}\n\n.markdownDateCreated {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: end;\n          align-items: flex-end;\n  -webkit-box-pack: end;\n          justify-content: flex-end;\n}", ""]);
+exports.push([module.i, "a {\n  color: white;\n}\n\n.navLogin {\n  background-color: #045658;\n  color: white;\n  width: 100vw;\n  height: 56px;\n  display: flex;\n  top: 0;\n  position: fixed;\n}\n.navLogin .logoPC {\n  display: flex;\n  align-items: center;\n}\n\n@media only screen and (max-width: 500px) {\n  .navPC {\n    display: none;\n  }\n}\n@media only screen and (min-width: 500px) {\n  .navPC {\n    background-color: #045658;\n    color: white;\n    width: 100vw;\n    height: 56px;\n    display: flex;\n    top: 0;\n    position: fixed;\n  }\n  .navPC .logoPC {\n    display: flex;\n    align-items: center;\n  }\n}\n\n.navMobile {\n  background-color: #045658;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  top: 0;\n  position: fixed;\n  width: 100vw;\n}\n@media only screen and (min-width: 500px) {\n  .navMobile {\n    display: none;\n  }\n}\n.navMobile .logoMobile {\n  display: flex;\n  align-items: center;\n}\n\n.navMobileItems {\n  display: flex;\n  flex-direction: column;\n  text-align: right;\n  justify-content: right;\n}\n\n.navbar-toggler {\n  margin: 0 auto;\n}\n\n.navButton {\n  padding: 0 20px 0 20px;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  width: 100vw;\n}\n\n.footer {\n  display: flex;\n  background-color: #fdac07;\n  width: 100vw;\n  margin: auto;\n}\n\n.login {\n  padding-top: 56px;\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n}\n.login h1 {\n  font-size: 100px;\n  font-family: Arial, Helvetica, sans-serif;\n}\n@media only screen and (max-width: 715px) {\n  .login h1 {\n    font-size: 60px;\n    text-align: center;\n  }\n}\n\n.login-form {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  text-align: center;\n}\n\n.register {\n  padding-top: 56px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.register h1 {\n  font-size: 100px;\n  font-family: Arial, Helvetica, sans-serif;\n}\n@media only screen and (max-width: 715px) {\n  .register h1 {\n    font-size: 60px;\n    text-align: center;\n  }\n}\n\n.registerForm {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n\n.manualsHomePage {\n  display: flex;\n  flex-direction: row;\n  height: 100vh;\n  width: 100vw;\n  justify-content: space-evenly;\n  padding-top: 56px;\n}\n.manualsHomePage .manualsHomePage1 {\n  background-color: #47802b;\n  flex-grow: 1;\n}\n.manualsHomePage .manualsHomePage2 {\n  background-color: #ef6101;\n  flex-grow: 1;\n}\n.manualsHomePage .addManualExpand {\n  background-color: #47802b;\n  flex-grow: 3;\n}\n.manualsHomePage .myManualExpand {\n  background-color: #ef6101;\n  flex-grow: 3;\n}\n\n.aboutHomePage {\n  background-color: #03161d;\n  color: white;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  flex-grow: 1;\n  padding-top: 56px;\n}\n\n.contactHomePage {\n  background-color: #47802b;\n  display: flex;\n  height: 100vh;\n  width: 100vw;\n  flex-grow: 1;\n  margin-bottom: 0;\n  padding-top: 56px;\n}\n\n.myManuals-each {\n  display: flex;\n  margin: 1em;\n  justify-content: space-around;\n}\n\n.myManuals-each-child {\n  width: 24px;\n  justify-content: center;\n}\n\n.myManuals-each-child-name {\n  width: 47px;\n}\n\n.myManuals-each-child-id {\n  width: 1px;\n}\n\nbutton {\n  display: inline-block;\n  font-weight: 300;\n  color: #212529;\n  text-align: center;\n  vertical-align: middle;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-color: #ef6101;\n  border: 1px solid transparent;\n  padding: 0.175rem 0.5rem;\n  font-size: 1rem;\n  line-height: 1.5;\n  border-radius: 0.25rem;\n  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n}\n\n.button-edit {\n  background-color: #ef6101;\n  color: white;\n}\n\n.button-view {\n  background-color: #079a9c;\n  color: white;\n}\n\n.button-delete {\n  background-color: red;\n  color: white;\n}\n\n.button-savenew {\n  background-color: grey;\n  color: black;\n}\n\n.button-create {\n  margin: 2em;\n}\n\n.addManualContainer {\n  display: flex;\n  flex-direction: row;\n  height: 80vh;\n}\n\n.addManualColumn1 {\n  display: flex;\n  flex-direction: column;\n  width: 50vw;\n  justify-content: space-between;\n}\n\n.addManualColumn2 {\n  display: flex;\n  width: 50vw;\n}\n\n.inputContainer {\n  display: flex;\n  border-color: black;\n  border-style: solid;\n  border-bottom: none;\n  height: 20vh;\n  justify-content: center;\n}\n\n.addProcessContainer {\n  display: flex;\n  border-color: black;\n  border-style: solid;\n  height: 80vh;\n  justify-content: center;\n}\n\n.markdownPreviewContainer {\n  display: flex;\n  border-color: black;\n  border-style: solid;\n  border-left: none;\n  height: 80vh;\n  width: 50vw;\n}\n\n.markdownFirstPage {\n  display: grid;\n  width: 100vw;\n}\n\n.markdownManualName {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.markdownDateCreated {\n  display: flex;\n  align-items: flex-end;\n  justify-content: flex-end;\n}", ""]);
 
 // exports
 
@@ -19883,7 +19883,7 @@ return jQuery;
   var undefined;
 
   /** Used as the semantic version number. */
-  var VERSION = '4.17.15';
+  var VERSION = '4.17.20';
 
   /** Used as the size to enable large array optimizations. */
   var LARGE_ARRAY_SIZE = 200;
@@ -23590,8 +23590,21 @@ return jQuery;
      * @returns {Array} Returns the new sorted array.
      */
     function baseOrderBy(collection, iteratees, orders) {
+      if (iteratees.length) {
+        iteratees = arrayMap(iteratees, function(iteratee) {
+          if (isArray(iteratee)) {
+            return function(value) {
+              return baseGet(value, iteratee.length === 1 ? iteratee[0] : iteratee);
+            }
+          }
+          return iteratee;
+        });
+      } else {
+        iteratees = [identity];
+      }
+
       var index = -1;
-      iteratees = arrayMap(iteratees.length ? iteratees : [identity], baseUnary(getIteratee()));
+      iteratees = arrayMap(iteratees, baseUnary(getIteratee()));
 
       var result = baseMap(collection, function(value, key, collection) {
         var criteria = arrayMap(iteratees, function(iteratee) {
@@ -23848,6 +23861,10 @@ return jQuery;
         var key = toKey(path[index]),
             newValue = value;
 
+        if (key === '__proto__' || key === 'constructor' || key === 'prototype') {
+          return object;
+        }
+
         if (index != lastIndex) {
           var objValue = nested[key];
           newValue = customizer ? customizer(objValue, key, nested) : undefined;
@@ -24000,11 +24017,14 @@ return jQuery;
      *  into `array`.
      */
     function baseSortedIndexBy(array, value, iteratee, retHighest) {
-      value = iteratee(value);
-
       var low = 0,
-          high = array == null ? 0 : array.length,
-          valIsNaN = value !== value,
+          high = array == null ? 0 : array.length;
+      if (high === 0) {
+        return 0;
+      }
+
+      value = iteratee(value);
+      var valIsNaN = value !== value,
           valIsNull = value === null,
           valIsSymbol = isSymbol(value),
           valIsUndefined = value === undefined;
@@ -25489,10 +25509,11 @@ return jQuery;
       if (arrLength != othLength && !(isPartial && othLength > arrLength)) {
         return false;
       }
-      // Assume cyclic values are equal.
-      var stacked = stack.get(array);
-      if (stacked && stack.get(other)) {
-        return stacked == other;
+      // Check that cyclic values are equal.
+      var arrStacked = stack.get(array);
+      var othStacked = stack.get(other);
+      if (arrStacked && othStacked) {
+        return arrStacked == other && othStacked == array;
       }
       var index = -1,
           result = true,
@@ -25654,10 +25675,11 @@ return jQuery;
           return false;
         }
       }
-      // Assume cyclic values are equal.
-      var stacked = stack.get(object);
-      if (stacked && stack.get(other)) {
-        return stacked == other;
+      // Check that cyclic values are equal.
+      var objStacked = stack.get(object);
+      var othStacked = stack.get(other);
+      if (objStacked && othStacked) {
+        return objStacked == other && othStacked == object;
       }
       var result = true;
       stack.set(object, other);
@@ -29038,6 +29060,10 @@ return jQuery;
      * // The `_.property` iteratee shorthand.
      * _.filter(users, 'active');
      * // => objects for ['barney']
+     *
+     * // Combining several predicates using `_.overEvery` or `_.overSome`.
+     * _.filter(users, _.overSome([{ 'age': 36 }, ['age', 40]]));
+     * // => objects for ['fred', 'barney']
      */
     function filter(collection, predicate) {
       var func = isArray(collection) ? arrayFilter : baseFilter;
@@ -29787,15 +29813,15 @@ return jQuery;
      * var users = [
      *   { 'user': 'fred',   'age': 48 },
      *   { 'user': 'barney', 'age': 36 },
-     *   { 'user': 'fred',   'age': 40 },
+     *   { 'user': 'fred',   'age': 30 },
      *   { 'user': 'barney', 'age': 34 }
      * ];
      *
      * _.sortBy(users, [function(o) { return o.user; }]);
-     * // => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 40]]
+     * // => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 30]]
      *
      * _.sortBy(users, ['user', 'age']);
-     * // => objects for [['barney', 34], ['barney', 36], ['fred', 40], ['fred', 48]]
+     * // => objects for [['barney', 34], ['barney', 36], ['fred', 30], ['fred', 48]]
      */
     var sortBy = baseRest(function(collection, iteratees) {
       if (collection == null) {
@@ -34670,11 +34696,11 @@ return jQuery;
 
       // Use a sourceURL for easier debugging.
       // The sourceURL gets injected into the source that's eval-ed, so be careful
-      // with lookup (in case of e.g. prototype pollution), and strip newlines if any.
-      // A newline wouldn't be a valid sourceURL anyway, and it'd enable code injection.
+      // to normalize all kinds of whitespace, so e.g. newlines (and unicode versions of it) can't sneak in
+      // and escape the comment, thus injecting code that gets evaled.
       var sourceURL = '//# sourceURL=' +
         (hasOwnProperty.call(options, 'sourceURL')
-          ? (options.sourceURL + '').replace(/[\r\n]/g, ' ')
+          ? (options.sourceURL + '').replace(/\s/g, ' ')
           : ('lodash.templateSources[' + (++templateCounter) + ']')
         ) + '\n';
 
@@ -34707,8 +34733,6 @@ return jQuery;
 
       // If `variable` is not specified wrap a with-statement around the generated
       // code to add the data object to the top of the scope chain.
-      // Like with sourceURL, we take care to not check the option's prototype,
-      // as this configuration is a code injection vector.
       var variable = hasOwnProperty.call(options, 'variable') && options.variable;
       if (!variable) {
         source = 'with (obj) {\n' + source + '\n}\n';
@@ -35415,6 +35439,9 @@ return jQuery;
      * values against any array or object value, respectively. See `_.isEqual`
      * for a list of supported value comparisons.
      *
+     * **Note:** Multiple values can be checked by combining several matchers
+     * using `_.overSome`
+     *
      * @static
      * @memberOf _
      * @since 3.0.0
@@ -35430,6 +35457,10 @@ return jQuery;
      *
      * _.filter(objects, _.matches({ 'a': 4, 'c': 6 }));
      * // => [{ 'a': 4, 'b': 5, 'c': 6 }]
+     *
+     * // Checking for several possible values
+     * _.filter(objects, _.overSome([_.matches({ 'a': 1 }), _.matches({ 'a': 4 })]));
+     * // => [{ 'a': 1, 'b': 2, 'c': 3 }, { 'a': 4, 'b': 5, 'c': 6 }]
      */
     function matches(source) {
       return baseMatches(baseClone(source, CLONE_DEEP_FLAG));
@@ -35443,6 +35474,9 @@ return jQuery;
      * **Note:** Partial comparisons will match empty array and empty object
      * `srcValue` values against any array or object value, respectively. See
      * `_.isEqual` for a list of supported value comparisons.
+     *
+     * **Note:** Multiple values can be checked by combining several matchers
+     * using `_.overSome`
      *
      * @static
      * @memberOf _
@@ -35460,6 +35494,10 @@ return jQuery;
      *
      * _.find(objects, _.matchesProperty('a', 4));
      * // => { 'a': 4, 'b': 5, 'c': 6 }
+     *
+     * // Checking for several possible values
+     * _.filter(objects, _.overSome([_.matchesProperty('a', 1), _.matchesProperty('a', 4)]));
+     * // => [{ 'a': 1, 'b': 2, 'c': 3 }, { 'a': 4, 'b': 5, 'c': 6 }]
      */
     function matchesProperty(path, srcValue) {
       return baseMatchesProperty(path, baseClone(srcValue, CLONE_DEEP_FLAG));
@@ -35683,6 +35721,10 @@ return jQuery;
      * Creates a function that checks if **all** of the `predicates` return
      * truthy when invoked with the arguments it receives.
      *
+     * Following shorthands are possible for providing predicates.
+     * Pass an `Object` and it will be used as an parameter for `_.matches` to create the predicate.
+     * Pass an `Array` of parameters for `_.matchesProperty` and the predicate will be created using them.
+     *
      * @static
      * @memberOf _
      * @since 4.0.0
@@ -35709,6 +35751,10 @@ return jQuery;
      * Creates a function that checks if **any** of the `predicates` return
      * truthy when invoked with the arguments it receives.
      *
+     * Following shorthands are possible for providing predicates.
+     * Pass an `Object` and it will be used as an parameter for `_.matches` to create the predicate.
+     * Pass an `Array` of parameters for `_.matchesProperty` and the predicate will be created using them.
+     *
      * @static
      * @memberOf _
      * @since 4.0.0
@@ -35728,6 +35774,9 @@ return jQuery;
      *
      * func(NaN);
      * // => false
+     *
+     * var matchesFunc = _.overSome([{ 'a': 1 }, { 'a': 2 }])
+     * var matchesPropertyFunc = _.overSome([['a', 1], ['a', 2]])
      */
     var overSome = createOver(arraySome);
 
@@ -84481,7 +84530,7 @@ var AddManual = function AddManual(props) {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return fetch('http://www.processmanual.test:8080/api/manual', {
+                return fetch('https://www.processmanual.test:8080/api/manual', {
                   method: 'POST',
                   // withCredentials: true,
                   // credentials: 'include',
@@ -84964,7 +85013,7 @@ var EditManual = function EditManual(props) {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return fetch("http://www.processmanual.test:8080/api/manual/".concat(props.manual.id), {
+                return fetch("http://www.processmanual.test:8080/api/manual/".concat(props.manual.id, "/edit"), {
                   method: 'GET',
                   headers: {
                     'Accept': 'application/json',
@@ -85013,8 +85062,8 @@ var EditManual = function EditManual(props) {
             switch (_context2.prev = _context2.next) {
               case 0:
                 _context2.next = 2;
-                return fetch("http://www.processmanual.test:8080/api/manual/".concat(props.manual.id, "/edit"), {
-                  method: 'GET',
+                return fetch("http://www.processmanual.test:8080/api/manual/".concat(props.manual.id), {
+                  method: 'PUT',
                   // withCredentials: true,
                   // credentials: 'include',
                   headers: {
@@ -85937,7 +85986,8 @@ var Register = function Register(props) {
   var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
     name: '',
     email: '',
-    password: ''
+    password: '',
+    image: ''
   }),
       _useState4 = _slicedToArray(_useState3, 2),
       formInputValues = _useState4[0],
@@ -85954,7 +86004,8 @@ var Register = function Register(props) {
       user: {
         name: formInputValues.name,
         email: formInputValues.email,
-        password: formInputValues.password
+        password: formInputValues.password,
+        image: ''
       }
     });
   };
@@ -85986,7 +86037,8 @@ var Register = function Register(props) {
                 body: JSON.stringify({
                   name: formInputValues.name,
                   email: formInputValues.email,
-                  password: formInputValues.password
+                  password: formInputValues.password,
+                  image: ''
                 })
               });
 
@@ -86008,7 +86060,8 @@ var Register = function Register(props) {
                   user: {
                     name: formInputValues.name,
                     email: formInputValues.email,
-                    password: formInputValues.password
+                    password: formInputValues.password,
+                    image: ''
                   }
                 });
                 console.log('registered succesfully');
@@ -86147,7 +86200,8 @@ var Routes = function Routes(props) {
     user: {
       name: '',
       email: '',
-      password: ''
+      password: '',
+      image: ''
     }
   }),
       _useState4 = _slicedToArray(_useState3, 2),

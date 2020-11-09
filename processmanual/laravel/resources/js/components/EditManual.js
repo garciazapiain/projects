@@ -12,7 +12,7 @@ const EditManual = (props) => {
     useEffect(()=> {
         const id = JSON.parse(window.localStorage.getItem('id'));
         async function fetchManual(){
-            const response = await fetch(`http://www.processmanual.test:8080/api/manual/${props.manual.id}`, {
+            const response = await fetch(`http://www.processmanual.test:8080/api/manual/${props.manual.id}/edit`, {
                 method: 'GET',
                 headers: {
                     'Accept': 'application/json',
@@ -30,8 +30,8 @@ const EditManual = (props) => {
         e.preventDefault()
         async function postSubmit() {
             // const token = window.localStorage.getItem('token');
-            const response = await fetch(`http://www.processmanual.test:8080/api/manual/${props.manual.id}/edit`, {
-            method: 'GET',
+            const response = await fetch(`http://www.processmanual.test:8080/api/manual/${props.manual.id}`, {
+            method: 'PUT',
             // withCredentials: true,
             // credentials: 'include',
             headers: {

@@ -11,7 +11,7 @@ const Register = props => {
     const { user } = props;
     const [alert, setAlert] = useState({})
     const formStyle = { borderRadius: '10px', margin: '.3rem', width:'286px' }
-    const [formInputValues, setFormInputValues] = useState({name: '', email: '', password: ''});
+    const [formInputValues, setFormInputValues] = useState({name: '', email: '', password: '',image:''});
     let history = useHistory();
     const handleNameInputChange = e => {
         // console.log(e.target + 'this is e target');
@@ -25,7 +25,8 @@ const Register = props => {
             user: {
                 name : formInputValues.name,
                 email: formInputValues.email,
-                password: formInputValues.password
+                password: formInputValues.password,
+                image: ''
               }
         })
     };
@@ -45,6 +46,7 @@ const Register = props => {
             name: formInputValues.name,
             email: formInputValues.email,
             password: formInputValues.password,
+            image: ''
         }),
         })
         const data = await response.json();
@@ -60,6 +62,7 @@ const Register = props => {
                     name : formInputValues.name,
                     email: formInputValues.email,
                     password: formInputValues.password,
+                    image: ''
                   }
             })
             console.log('registered succesfully')
